@@ -117,7 +117,7 @@
     "Id": "b84348d2-1d97-4773-95dc-2120cf060c3b",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Calculations",
     "OriginatingVersion": "1.342",
     "ParserErrorCount": 0,

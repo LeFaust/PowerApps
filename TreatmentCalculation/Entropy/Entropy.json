@@ -9,7 +9,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/18/2024 18:38:11",
+  "HeaderLastSavedDateTimeUTC": "07/18/2024 19:18:28",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
@@ -57,8 +57,12 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0713105,
-    "ControlCount": {}
+    "AnalysisLoadTime": 0.0766041,
+    "ControlCount": {
+      "PowerApps_CoreControls_ButtonCanvas": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.7585677
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
