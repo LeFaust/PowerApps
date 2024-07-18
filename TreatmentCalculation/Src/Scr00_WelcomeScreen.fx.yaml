@@ -1,0 +1,12 @@
+Scr00_WelcomeScreen As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Width: =96
+        X: =240
+        Y: =475
+        ZIndex: =1
+
