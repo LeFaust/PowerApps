@@ -1,34 +1,66 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "Cmp_Header": 1,
+    "Cmp_Navigation": 2,
+    "x00_Cmp_Header": 1,
+    "x00_Cmp_Navigation": 2
+  },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
     "ButtonCanvas1": 5,
+    "Cmp_Header": 6,
+    "Cmp_Imp_Calculation": 13,
+    "Cmp_Navigation": 7,
     "Host": 3,
-    "Scr00_WelcomeScreen": 4
+    "Scr00_WelcomeScreen": 4,
+    "x00_Cmp_Header": 9,
+    "x00_Cmp_Navigation": 11,
+    "x00_Cnt_Header": 8,
+    "x00_Cnt_Navigation": 10
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/18/2024 19:18:28",
+  "HeaderLastSavedDateTimeUTC": "07/23/2024 09:29:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": true,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
+  "LocalResourceFileNames": {
+    "Calculation": "32883f25-24d9-43de-9b82-a3299b86fae4.png"
+  },
+  "LocalResourceRootPaths": {
+    "Calculation": "https://docserverpwaprodnuae.blob.core.windows.net/ae61f7d0-b90d-4f05-a3fb-aaba9b4a7e7d-1/resource/bb2957c9-7f39-4a8a-abe4-189657d994ca.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-07-23T09%3A26%3A10Z&ske=2024-07-24T09%3A41%3A10Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-07-24T09%3A41%3A10Z&sr=b&sp=r&sig=57XZeSpf8aGkuyV34lsPV4S03%2FNsyJEmJPlnB59rPSE%3D"
+  },
+  "OrderComponentMetadata": {
+    "04ce6f2b9ab1410189143e07b518a872": 0,
+    "89b7dffe68ab42459bbfc5305bec16dc": 1
+  },
+  "OrderComponentTemplate": {
+    "04ce6f2b9ab1410189143e07b518a872": 0,
+    "89b7dffe68ab42459bbfc5305bec16dc": 1
+  },
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {
     "PowerApps_CoreControls_ButtonCanvas": 0
   },
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "groupContainer": 0,
+    "image": 1
+  },
   "OverridablePropertiesEntry": {
     "App": {},
     "ButtonCanvas1": {},
+    "Cmp_Header": {},
+    "Cmp_Imp_Calculation": {},
+    "Cmp_Navigation": {},
     "Host": {},
-    "Scr00_WelcomeScreen": {}
+    "Scr00_WelcomeScreen": {},
+    "x00_Cmp_Header": {},
+    "x00_Cmp_Navigation": {},
+    "x00_Cnt_Header": {},
+    "x00_Cnt_Navigation": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {
@@ -49,20 +81,33 @@
   },
   "PublishOrderIndices": {
     "App": 0,
-    "ButtonCanvas1": 0,
+    "ButtonCanvas1": 2,
+    "Cmp_Header": 0,
+    "Cmp_Imp_Calculation": 5,
+    "Cmp_Navigation": 0,
     "Host": 0,
-    "Scr00_WelcomeScreen": 0
+    "Scr00_WelcomeScreen": 0,
+    "x00_Cmp_Header": 1,
+    "x00_Cmp_Navigation": 4,
+    "x00_Cnt_Header": 0,
+    "x00_Cnt_Navigation": 3
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-Calculation": 1,
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0766041,
+    "AnalysisLoadTime": 0.0761764,
     "ControlCount": {
+      "04ce6f2b9ab1410189143e07b518a872": 1,
+      "89b7dffe68ab42459bbfc5305bec16dc": 1,
+      "image": 1,
       "PowerApps_CoreControls_ButtonCanvas": 1,
       "screen": 1
     },
-    "DeserializationLoadTime": 0.7585677
+    "DeserializationLoadTime": 0.7881181
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

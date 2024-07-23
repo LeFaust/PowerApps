@@ -1,6 +1,32 @@
 Scr00_WelcomeScreen As screen:
-    Fill: =Color.White
+    Fill: =Color.SkyBlue
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    x00_Cnt_Header As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Semibold
+        Height: =100
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        x00_Cmp_Header As Cmp_Header:
+            Height: =Parent.Height
+
+    x00_Cnt_Navigation As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Semibold
+        Height: =100
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =App.DesignWidth
+        Y: =Parent.Height - Self.Height
+        ZIndex: =2
+
+        x00_Cmp_Navigation As Cmp_Navigation:
 
     ButtonCanvas1 As Button:
         DisplayMode: =DisplayMode.Edit
@@ -8,5 +34,5 @@ Scr00_WelcomeScreen As screen:
         Width: =96
         X: =240
         Y: =475
-        ZIndex: =1
+        ZIndex: =3
 
