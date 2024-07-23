@@ -4,21 +4,44 @@ Cmp_Header As CanvasComponent:
     Width: =App.DesignWidth
     X: =0
     Y: =0
+    zHeaderTitle: ="Text"
     ZIndex: =1
+    zShowIcon: =true
 
-    Icon1 As icon.Waffle:
+    Cmp_Ico_Home As icon.Waffle:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
+        Color: =Color.White
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =Parent.Height - 2 * Self.Y
-        Icon: =Icon.Waffle
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
         PaddingBottom: =5
         PaddingLeft: =5
         PaddingRight: =5
         PaddingTop: =5
         Width: =Self.Height
         X: =15
-        Y: =15
+        Y: =25
         ZIndex: =1
+
+    Cmp_Lbl_Title As Text:
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height
+        Size: =30
+        Weight: ='TextCanvas.Weight'.Semibold
+        Width: =Cmp_Img_Logo.X - Self.X
+        X: =Cmp_Ico_Home.X + Cmp_Ico_Home.Width + 10
+        Y: =0
+        ZIndex: =2
+
+    Cmp_Img_Logo As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =Parent.Height
+        Width: =226
+        X: =414
+        ZIndex: =3
 

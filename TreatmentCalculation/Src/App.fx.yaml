@@ -1,5 +1,60 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =// --- Setup Navigation Menu - 1
+        ClearCollect(
+            oNavigation01,
+            {
+                ID : "N01",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            },
+            {
+                ID : "N02",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            },
+            {
+                ID : "N03",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            },
+            {
+                ID : "N04",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            }
+        );
+        
+        ClearCollect(
+            oNavigation02,
+            {
+                N1_ID : "N01",
+                ID: "NN01",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            },
+            {
+                N1_ID : "N01",
+                ID: "NN02",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            },
+            {
+                N1_ID : "N01",
+                ID: "NN03",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            },
+            {
+                N1_ID : "N01",
+                ID: "NN04",
+                Icon: "Icon.Waffle",
+                Screen : "Scr01_Home"
+            }
+        );
+        
+        // --- Setup Navigation Menu - 1
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

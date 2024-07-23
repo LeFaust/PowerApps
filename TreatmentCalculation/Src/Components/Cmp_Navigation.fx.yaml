@@ -1,5 +1,5 @@
 Cmp_Navigation As CanvasComponent:
-    Fill: =RGBA(0, 0, 0, 0)
+    Fill: =RGBA(0, 0, 0, 1)
     Height: =100
     Width: =App.DesignWidth
     X: =0
