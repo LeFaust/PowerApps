@@ -135,6 +135,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Scr00_WelcomeScreen"
+    "Scr00_WelcomeScreen",
+    "Scr01_HomeScreen"
   ]
 }

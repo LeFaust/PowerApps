@@ -57,19 +57,19 @@
     "OverridableProperties": {},
     "Version": "1.6.0"
   },
-  "image": {
+  "icon": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/image",
+    "Id": "http://microsoft.com/appmagic/icon",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "image",
+    "Name": "icon",
     "OverridableProperties": {},
-    "Version": "2.2.3"
+    "Version": "2.5.0"
   },
   "screen": {
     "CustomGroupControlTemplateName": "",

@@ -1,8 +1,8 @@
-Scr00_WelcomeScreen As screen:
+Scr01_HomeScreen As screen:
     Fill: =Color.SkyBlue
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
-    x00_Cnt_Header As groupContainer.manualLayoutContainer:
+    x01_Cnt_Header As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Semibold
         Height: =100
         RadiusBottomLeft: =4
@@ -12,10 +12,10 @@ Scr00_WelcomeScreen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        x00_Cmp_Header As Cmp_Header:
+        x01_Cmp_Header As Cmp_Header:
             Height: =Parent.Height
 
-    x00_Cnt_Navigation As groupContainer.manualLayoutContainer:
+    x01_Cnt_Navigation As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Semibold
         Height: =100
         RadiusBottomLeft: =4
@@ -26,13 +26,5 @@ Scr00_WelcomeScreen As screen:
         Y: =Parent.Height - Self.Height
         ZIndex: =2
 
-        x00_Cmp_Navigation As Cmp_Navigation:
-
-    ButtonCanvas1 As Button:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Width: =96
-        X: =400
-        Y: =920
-        ZIndex: =3
+        x01_Cmp_Navigation As Cmp_Navigation:
 

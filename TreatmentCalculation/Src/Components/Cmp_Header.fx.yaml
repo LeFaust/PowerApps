@@ -1,19 +1,24 @@
 Cmp_Header As CanvasComponent:
-    Fill: =RGBA(0, 0, 0, 0)
+    Fill: =RGBA(0, 0, 0, 1)
     Height: =100
     Width: =App.DesignWidth
     X: =0
     Y: =0
     ZIndex: =1
 
-    Cmp_Imp_Calculation As image:
+    Icon1 As icon.Waffle:
         BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =Parent.Height
-        Image: =Calculation
-        Width: =320
-        X: =Parent.Width - Self.Width - 10
-        Y: =0 + 0
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =Parent.Height - 2 * Self.Y
+        Icon: =Icon.Waffle
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        Width: =Self.Height
+        X: =15
+        Y: =15
         ZIndex: =1
 
