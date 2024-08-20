@@ -1,4 +1,5 @@
 Scr00_WelcomeScreen As screen:
+    BackgroundImage: ='White Minimalist Poem Book Cover'
     Fill: =Color.SkyBlue
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
