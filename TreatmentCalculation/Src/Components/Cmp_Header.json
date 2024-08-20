@@ -85,7 +85,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "30",
+            "InvariantScript": "35",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -97,7 +97,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "RGBA(255, 255, 255, 1)",
+            "InvariantScript": "RGBA(106, 122, 127, 1)",
             "Property": "FontColor",
             "RuleProviderType": "Unknown"
           },
@@ -426,7 +426,7 @@
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "App.Theme.Colors.Darker30",
+            "AutoRuleBindingString": "",
             "InvariantPropertyName": "Color",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
@@ -599,7 +599,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Color.White",
+            "InvariantScript": "RGBA(106, 122, 127, 1)",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -754,7 +754,7 @@
       "zHeaderTitle",
       "zShowIcon"
     ],
-    "LastModifiedTimestamp": "638597496197648508",
+    "LastModifiedTimestamp": "638597506791096578",
     "Name": "Cmp_Header",
     "Rules": [
       {
@@ -801,7 +801,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "RGBA(0, 0, 0, 1)",
+        "InvariantScript": "RGBA(0, 0, 0, 0)",
         "Property": "Fill",
         "RuleProviderType": "System"
       }
@@ -844,7 +844,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638597496197648508",
+  "LastModifiedTimestamp": "638597506791096578",
   "Name": "04ce6f2b9ab1410189143e07b518a872",
   "OverridableProperties": {},
   "Version": "1.0"

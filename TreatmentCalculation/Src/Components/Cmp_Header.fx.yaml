@@ -1,5 +1,5 @@
 Cmp_Header As CanvasComponent:
-    Fill: =RGBA(0, 0, 0, 1)
+    Fill: =RGBA(0, 0, 0, 0)
     Height: =100
     Width: =App.DesignWidth
     X: =0
@@ -10,7 +10,7 @@ Cmp_Header As CanvasComponent:
 
     Cmp_Ico_Home As icon.Waffle:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =Color.White
+        Color: =RGBA(106, 122, 127, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =Parent.Height - 2 * Self.Y
@@ -27,9 +27,9 @@ Cmp_Header As CanvasComponent:
 
     Cmp_Lbl_Title As Text:
         DisplayMode: =DisplayMode.Edit
-        FontColor: =RGBA(255, 255, 255, 1)
+        FontColor: =RGBA(106, 122, 127, 1)
         Height: =Parent.Height
-        Size: =30
+        Size: =35
         Weight: ='TextCanvas.Weight'.Semibold
         Width: =Cmp_Img_Logo.X - Self.X
         X: =Cmp_Ico_Home.X + Cmp_Ico_Home.Width + 10
