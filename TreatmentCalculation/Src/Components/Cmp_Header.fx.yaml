@@ -8,7 +8,7 @@ Cmp_Header As CanvasComponent:
     ZIndex: =1
     zShowIcon: =true
 
-    Cmp_Ico_Home As icon.Waffle:
+    Cmp_Ico_Back As icon.Waffle:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(106, 122, 127, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -22,7 +22,7 @@ Cmp_Header As CanvasComponent:
         PaddingTop: =5
         Width: =Self.Height
         X: =15
-        Y: =25
+        Y: =20
         ZIndex: =1
 
     Cmp_Lbl_Title As Text:
@@ -30,9 +30,10 @@ Cmp_Header As CanvasComponent:
         FontColor: =RGBA(106, 122, 127, 1)
         Height: =Parent.Height
         Size: =35
+        Text: =Cmp_Header.zHeaderTitle
         Weight: ='TextCanvas.Weight'.Semibold
         Width: =Cmp_Img_Logo.X - Self.X
-        X: =Cmp_Ico_Home.X + Cmp_Ico_Home.Width + 10
+        X: =Cmp_Ico_Back.X + Cmp_Ico_Back.Width + 10
         Y: =0
         ZIndex: =2
 
@@ -41,7 +42,12 @@ Cmp_Header As CanvasComponent:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =Parent.Height
-        Width: =226
-        X: =414
+        Image: =MyLogo
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =175
+        X: =Parent.Width - Self.Width
         ZIndex: =3
 

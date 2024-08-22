@@ -135,6 +135,6 @@
   },
   "ScreenOrder": [
     "Scr00_WelcomeScreen",
-    "Scr01_HomeScreen"
+    "Scr01_CoolingWaterTreatment"
   ]
 }

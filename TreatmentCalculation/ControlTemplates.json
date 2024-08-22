@@ -13,20 +13,47 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
-  "Button": {
+  "button": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ButtonCanvas",
+    "Id": "http://microsoft.com/appmagic/button",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "button",
+    "OverridableProperties": {},
+    "Version": "2.2.0"
+  },
+  "gallery": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/gallery",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "gallery",
+    "OverridableProperties": {},
+    "Version": "2.15.0"
+  },
+  "galleryTemplate": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/galleryTemplate",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_ButtonCanvas",
+    "Name": "galleryTemplate",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Button",
-    "Version": "0.0.42"
+    "Version": "1.0"
   },
   "groupContainer": {
     "CustomGroupControlTemplateName": "",

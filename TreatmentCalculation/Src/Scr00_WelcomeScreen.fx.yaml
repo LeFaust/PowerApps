@@ -18,6 +18,8 @@ Scr00_WelcomeScreen As screen:
 
         x00_Cmp_Header As Cmp_Header:
             Height: =Parent.Height
+            Width: =Parent.Width
+            zHeaderTitle: ="Water Treatment"
 
     x00_Cnt_Navigation As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
@@ -32,11 +34,802 @@ Scr00_WelcomeScreen As screen:
 
         x00_Cmp_Navigation As Cmp_Navigation:
 
-    ButtonCanvas1 As Button:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Width: =96
-        X: =474
-        Y: =525
+    x00_Cnt_Button01 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button02.X - Self.Width - 20
+        Y: =x00_Cnt_Header.Y + x00_Cnt_Header.Height + 50
         ZIndex: =3
+
+        x00_Img_Button01 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            Image: =CoolingTower
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button01 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Cooling Water Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button01 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: |-
+                =Set(oSelectedButton, "N01");
+                Navigate(Scr01_CoolingWaterTreatment)
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button02 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =(Parent.Width - Self.Width) / 2
+        Y: =x00_Cnt_Button01.Y
+        ZIndex: =4
+
+        x00_Img_Button02 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button02 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button02 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N02");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button03 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button02.X + x00_Cnt_Button02.Width + 20
+        Y: =x00_Cnt_Button01.Y
+        ZIndex: =5
+
+        x00_Img_Button03 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            Image: =Boiler
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button03 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Boiler Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button03 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N03");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button04 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button01.X
+        Y: =x00_Cnt_Button01.Y + x00_Cnt_Button01.Height + 20
+        ZIndex: =6
+
+        x00_Img_Button04 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            Image: =ReverseOsmosis
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button04 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Reverse Ormosis"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button04 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N04");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button05 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button02.X
+        Y: =x00_Cnt_Button04.Y
+        ZIndex: =7
+
+        x00_Img_Button05 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button05 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button05 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N05");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button06 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button03.X
+        Y: =x00_Cnt_Button04.Y
+        ZIndex: =8
+
+        x00_Img_Button06 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button06 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button06 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N06");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button07 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button01.X
+        Y: =x00_Cnt_Button04.Y + x00_Cnt_Button04.Height + 20
+        ZIndex: =9
+
+        x00_Img_Button07 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            Image: =WaterSoftener
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button07 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Water Softener"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button07 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N07");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button08 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button02.X
+        Y: =x00_Cnt_Button07.Y
+        ZIndex: =10
+
+        x00_Img_Button08 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button08 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button08 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N08");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button09 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button03.X
+        Y: =x00_Cnt_Button07.Y
+        ZIndex: =11
+
+        x00_Img_Button09 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button09 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button09 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N09");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button10 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button01.X
+        Y: =x00_Cnt_Button07.Y + x00_Cnt_Button07.Height + 20
+        ZIndex: =12
+
+        x00_Img_Button10 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            Image: =WasteWater
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button10 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button10 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N10");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button11 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button02.X
+        Y: =x00_Cnt_Button10.Y
+        ZIndex: =13
+
+        x00_Img_Button11 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button11 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button11 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N11");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
+
+    x00_Cnt_Button12 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =Self.Width
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =185
+        X: =x00_Cnt_Button03.X
+        Y: =x00_Cnt_Button10.Y
+        ZIndex: =14
+
+        x00_Img_Button12 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height - 30
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =185
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x00_Lbl_Button12 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =30 + 0
+            Size: =14
+            Text: ="Treatment"
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =Parent.Height - Self.Height
+            ZIndex: =2
+
+        x00_Btn_Button12 As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Set(oSelectedButton, "N12");
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =3
 

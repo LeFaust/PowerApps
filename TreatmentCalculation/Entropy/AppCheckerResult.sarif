@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Home.AccessibleLabel"
+                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Home.AccessibleLabel",
+                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Cmp_Header",
-                "type": "Cmp_Header.Cmp_Ico_Home"
+                "type": "Cmp_Header.Cmp_Ico_Back"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Home.TabIndex"
+                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Home.TabIndex",
+                  "fullyQualifiedName": "Cmp_Header.Cmp_Ico_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Cmp_Header",
-                "type": "Cmp_Header.Cmp_Ico_Home"
+                "type": "Cmp_Header.Cmp_Ico_Back"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr00_WelcomeScreen.ButtonCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "Cmp_Navigation.Cmp_Gal_Navigation.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr00_WelcomeScreen.ButtonCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "Cmp_Navigation.Cmp_Gal_Navigation.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Scr00_WelcomeScreen",
-                "type": "Scr00_WelcomeScreen.ButtonCanvas1"
+                "module": "Cmp_Navigation",
+                "type": "Cmp_Navigation.Cmp_Gal_Navigation"
               }
             }
           ],
@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Calculation"
+                  "fullyQualifiedName": "Cmp_Navigation.Cmp_Gal_Navigation.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Calculation",
+                  "fullyQualifiedName": "Cmp_Navigation.Cmp_Gal_Navigation.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Calculation",
-                "module": "App",
-                "type": "App"
+                "member": "TabIndex",
+                "module": "Cmp_Navigation",
+                "type": "Cmp_Navigation.Cmp_Gal_Navigation"
               }
             }
           ],
@@ -126,8 +126,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 2
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         }
       ],
       "tool": {
@@ -167,23 +167,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
-              }
-            },
-            {
-              "id": "app-UnusedMediaResources",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unused media files"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove the unused media file in the Media pane."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
               }
             }
           ],

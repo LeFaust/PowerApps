@@ -4,5 +4,151 @@ Cmp_Navigation As CanvasComponent:
     Width: =App.DesignWidth
     X: =0
     Y: =0
+    zHome: =Scr00_WelcomeScreen
     ZIndex: =1
+    zMenuItems: |-
+        =/*Table(
+            {
+                ButtonID: "N01",
+                ID: "NN01",
+                Icon: CoolingTower,
+                Screen : App.ActiveScreen
+            },{
+                ButtonID: "N01",
+                ID: "NN02",
+                Icon: Boiler,
+                Screen : App.ActiveScreen
+            },{
+                ButtonID: "N01",
+                ID: "NN03",
+                Icon: WaterSoftener,
+                Screen : App.ActiveScreen
+            },{
+                ButtonID: "N01",
+                ID: "NN04",
+                Icon: WasteWater,
+                Screen : App.ActiveScreen
+            }
+        )*/
+        
+        SortByColumns(
+            Filter(
+                oNavigation,
+                ButtonID = oSelectedButton
+            ),
+            "ID", SortOrder.Ascending
+        )
+
+    Cmp_Cnt_Home As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height - 2 * Self.Y
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =80
+        X: =40
+        Y: =10
+        ZIndex: =1
+
+        Cmp_Img_Home As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height
+            Image: =Home
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        Cmp_Btn_Home As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Navigate(Cmp_Navigation.zHome)
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =2
+
+    "Cmp_Gal_Navigation As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =App.Theme.Colors.Darker40
+        DelayItemLoading: =true
+        Height: =Parent.Height
+        Items: =Cmp_Navigation.zMenuItems
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =10
+        TemplateSize: =100
+        Width: =Parent.Width - Self.X - 20
+        X: =Cmp_Cnt_Home.X + Cmp_Cnt_Home.Width + 50
+        Y: =0 + 0
+        ZIndex: =2
+
+        Gal_Dat_Image As image:
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =80
+            Image: =ThisItem.Icon
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =80
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        Gal_Btn_Button As button:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Height: =80 + 0
+            HoverBorderColor: =App.Theme.Colors.Darker10
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 14, 46, 0.3)
+            OnSelect: =Navigate(ThisItem.Screen)
+            PressedBorderColor: =App.Theme.Colors.Darker40
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(0, 14, 46, 0.6)
+            Size: =24
+            Text: =
+            Width: =80 + 0
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =2
 

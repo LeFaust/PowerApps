@@ -1,60 +1,321 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
-        =// --- Setup Navigation Menu - 1
+    OnStart: |
+        =// --- Setup Navigation Menu
         ClearCollect(
-            oNavigation01,
+            oNavigation,
+            // --- Button 01
             {
-                ID : "N01",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
-            },
-            {
-                ID : "N02",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
-            },
-            {
-                ID : "N03",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
-            },
-            {
-                ID : "N04",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
-            }
-        );
-        
-        ClearCollect(
-            oNavigation02,
-            {
-                N1_ID : "N01",
+                ButtonID : "N01",
                 ID: "NN01",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
+                Icon: CoolingTower,
+                Screen : 'Scr00_WelcomeScreen'
             },
             {
-                N1_ID : "N01",
+                ButtonID : "N01",
                 ID: "NN02",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
             },
             {
-                N1_ID : "N01",
+                ButtonID : "N01",
                 ID: "NN03",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
             },
             {
-                N1_ID : "N01",
+                ButtonID : "N01",
                 ID: "NN04",
-                Icon: "Icon.Waffle",
-                Screen : "Scr01_Home"
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 02
+            {
+                ButtonID : "N02",
+                ID: "NN05",
+                Icon: Boiler,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N02",
+                ID: "NN06",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N02",
+                ID: "NN07",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N02",
+                ID: "NN08",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 03
+            {
+                ButtonID : "N03",
+                ID: "NN09",
+                Icon: ReverseOsmosis,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N03",
+                ID: "NN10",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N03",
+                ID: "NN11",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N03",
+                ID: "NN12",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 04
+            {
+                ButtonID : "N04",
+                ID: "NN13",
+                Icon: WaterSoftener,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N04",
+                ID: "NN14",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N04",
+                ID: "NN15",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N04",
+                ID: "NN16",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 05
+            {
+                ButtonID : "N05",
+                ID: "NN17",
+                Icon: WasteWater,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N05",
+                ID: "NN18",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N05",
+                ID: "NN19",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N05",
+                ID: "NN20",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 06
+            {
+                ButtonID : "N06",
+                ID: "NN21",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N06",
+                ID: "NN22",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N06",
+                ID: "NN23",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N06",
+                ID: "NN24",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 07
+            {
+                ButtonID : "N07",
+                ID: "NN25",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N07",
+                ID: "NN26",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N07",
+                ID: "NN27",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N07",
+                ID: "NN28",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 08
+            {
+                ButtonID : "N08",
+                ID: "NN29",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N08",
+                ID: "NN30",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N08",
+                ID: "NN31",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N08",
+                ID: "NN32",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 09
+            {
+                ButtonID : "N09",
+                ID: "NN33",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N09",
+                ID: "NN34",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N09",
+                ID: "NN35",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N09",
+                ID: "NN36",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 10
+            {
+                ButtonID : "N10",
+                ID: "NN37",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N10",
+                ID: "NN38",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N10",
+                ID: "NN39",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N10",
+                ID: "NN40",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 11
+            {
+                ButtonID : "N11",
+                ID: "NN41",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N11",
+                ID: "NN42",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N11",
+                ID: "NN43",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N11",
+                ID: "NN44",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+        
+            // --- Button 12
+            {
+                ButtonID : "N12",
+                ID: "NN45",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N12",
+                ID: "NN46",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N12",
+                ID: "NN47",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
+            },
+            {
+                ButtonID : "N12",
+                ID: "NN48",
+                Icon: SampleImage,
+                Screen : 'Scr00_WelcomeScreen'
             }
         );
-        
-        // --- Setup Navigation Menu - 1
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
