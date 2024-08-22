@@ -582,7 +582,8 @@
             "InvariantPropertyName": "OnSelect",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
-          }
+          },
+          "Visible"
         ],
         "ControlUniqueId": "7",
         "HasDynamicProperties": false,
@@ -668,9 +669,9 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Icon.BackArrow",
+            "InvariantScript": "If(\r\n    Cmp_Header.zShowIcon = true,\r\n    Icon.BackArrow,\r\n    Icon.Waffle\r\n)",
             "Property": "Icon",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           },
           {
             "Category": "Design",
@@ -763,6 +764,12 @@
             "RuleProviderType": "Unknown"
           },
           {
+            "Category": "Design",
+            "InvariantScript": "true",
+            "Property": "Visible",
+            "RuleProviderType": "User"
+          },
+          {
             "Category": "Behavior",
             "InvariantScript": "Back()",
             "Property": "OnSelect",
@@ -817,7 +824,7 @@
       "zHeaderTitle",
       "zShowIcon"
     ],
-    "LastModifiedTimestamp": "638599566983208725",
+    "LastModifiedTimestamp": "638599638853719376",
     "Name": "Cmp_Header",
     "Rules": [
       {
@@ -907,7 +914,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638599566983208725",
+  "LastModifiedTimestamp": "638599638853719376",
   "Name": "04ce6f2b9ab1410189143e07b518a872",
   "OverridableProperties": {},
   "Version": "1.0"

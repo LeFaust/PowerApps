@@ -20,6 +20,7 @@ Scr00_WelcomeScreen As screen:
             Height: =Parent.Height
             Width: =Parent.Width
             zHeaderTitle: ="Water Treatment"
+            zShowIcon: =false
 
     x00_Cnt_Navigation As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold

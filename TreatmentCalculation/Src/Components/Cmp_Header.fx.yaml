@@ -14,7 +14,12 @@ Cmp_Header As CanvasComponent:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =Parent.Height - 2 * Self.Y
-        Icon: =Icon.BackArrow
+        Icon: |-
+            =If(
+                Cmp_Header.zShowIcon = true,
+                Icon.BackArrow,
+                Icon.Waffle
+            )
         OnSelect: =Back()
         PaddingBottom: =5
         PaddingLeft: =5
