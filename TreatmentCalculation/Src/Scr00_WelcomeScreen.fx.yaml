@@ -98,7 +98,7 @@ Scr00_WelcomeScreen As screen:
             HoverFill: =RGBA(0, 14, 46, 0.3)
             OnSelect: |-
                 =Set(oSelectedButton, "N01");
-                Navigate(Scr01_CoolingWaterTreatment)
+                Navigate(Scr01_CWTInformation)
             PressedBorderColor: =App.Theme.Colors.Darker40
             PressedColor: =Self.Color
             PressedFill: =RGBA(0, 14, 46, 0.6)

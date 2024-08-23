@@ -135,6 +135,7 @@
   },
   "ScreenOrder": [
     "Scr00_WelcomeScreen",
-    "Scr01_CoolingWaterTreatment"
+    "Scr01_CWTInformation",
+    "Scr02_CWTCalculation"
   ]
 }
