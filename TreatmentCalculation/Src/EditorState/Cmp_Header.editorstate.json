@@ -217,7 +217,7 @@
       "MetaDataIDKey": "",
       "Name": "Cmp_Ico_Back",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -476,7 +476,7 @@
       "MetaDataIDKey": "",
       "Name": "Cmp_Img_Logo",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -725,7 +725,7 @@
       "MetaDataIDKey": "",
       "Name": "Cmp_Lbl_SubTitle",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
