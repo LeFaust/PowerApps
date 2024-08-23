@@ -9,16 +9,16 @@ App As appinfo:
                 ButtonID : "N01",
                 Name: "Cooling Water Treatment",
                 Icon: CoolingTower,
-                Screen : Scr01_CWTInformation
+                Screen : Scr01_1_CWTInformation
             }, {
                 ButtonID : "N02",
                 Name: "Chilled Water Treatment",
                 Icon: Chiller,
-                Screen : Scr00_MainScreen
+                Screen : Scr02_1_CHWInformation
             }, {
                 ButtonID : "N03",
                 Name: "EvapCo Water Treatment",
-                Icon: SampleImage,
+                Icon: EvapCo,
                 Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N04",
@@ -38,7 +38,7 @@ App As appinfo:
             }, {
                 ButtonID : "N07",
                 Name: "Demineralizer",
-                Icon: SampleImage,
+                Icon: Demineralizer,
                 Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N08",
@@ -77,22 +77,22 @@ App As appinfo:
                 ButtonID : "N01",
                 ID: "NN01",
                 Icon: Analysis,
-                Screen : Scr00_MainScreen
+                Screen : Scr01_1_CWTInformation
             }, {
                 ButtonID : "N01",
                 ID: "NN02",
                 Icon: Clipboard,
-                Screen : Scr00_MainScreen
+                Screen : Scr01_2_CWTEvaluation
             }, {
                 ButtonID : "N01",
                 ID: "NN03",
                 Icon: Calculator,
-                Screen : Scr00_MainScreen
+                Screen : Scr01_3_CWTCalculation
             }, {
                 ButtonID : "N01",
                 ID: "NN04",
                 Icon: Chemicals,
-                Screen : Scr00_MainScreen
+                Screen : Scr01_4_CWTChemicals
             },
         
             // --- Button 02 : Chilled Water Treatment
@@ -100,22 +100,22 @@ App As appinfo:
                 ButtonID : "N02",
                 ID: "NN05",
                 Icon: Clipboard,
-                Screen : Scr00_MainScreen
+                Screen : Scr02_1_CHWInformation
             }, {
                 ButtonID : "N02",
                 ID: "NN06",
                 Icon: Calculator,
-                Screen : Scr00_MainScreen
+                Screen : Scr02_2_CHWCalculation
             }, {
                 ButtonID : "N02",
                 ID: "NN07",
                 Icon: Chemicals,
-                Screen : Scr00_MainScreen
+                Screen : Scr02_3_CHWChemicals
             }, {
                 ButtonID : "N02",
                 ID: "NN08",
                 Icon: PotFeeder,
-                Screen : Scr00_MainScreen
+                Screen : Scr02_4_PotFeeder
             },
         
             // --- Button 03 : Boiler Water Treatment

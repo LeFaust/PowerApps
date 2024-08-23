@@ -1076,18 +1076,11 @@
         "X",
         "Y",
         "ZIndex",
+        "zHome",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "App.ActiveScreen",
-          "InvariantPropertyName": "zHome",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "SortByColumns(\n    Filter(\n        oSubNavigation,\n        ButtonID = oSelectedButton\n    ),\n    \"ID\", SortOrder.Ascending\n)",
+          "AutoRuleBindingString": "SortByColumns(\n    Filter(\n        wSubNavigation,\n        ButtonID = oSelectedButton\n    ),\n    \"ID\", SortOrder.Ascending\n)",
           "InvariantPropertyName": "zMenuItems",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

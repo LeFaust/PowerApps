@@ -2023,24 +2023,17 @@
       "X",
       "Y",
       "ZIndex",
+      "zHome",
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "App.ActiveScreen",
-        "InvariantPropertyName": "zHome",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "SortByColumns(\n    Filter(\n        oSubNavigation,\n        ButtonID = oSelectedButton\n    ),\n    \"ID\", SortOrder.Ascending\n)",
+        "AutoRuleBindingString": "SortByColumns(\n    Filter(\n        wSubNavigation,\n        ButtonID = oSelectedButton\n    ),\n    \"ID\", SortOrder.Ascending\n)",
         "InvariantPropertyName": "zMenuItems",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638599863647172446",
+    "LastModifiedTimestamp": "638599904390677315",
     "Name": "Cmp_Navigation",
     "Rules": [
       {
@@ -2051,7 +2044,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "SortByColumns(\n    Filter(\n        wSubNavigation,\n        ButtonID = oSelectedButton\n    ),\n    \"ID\", SortOrder.Ascending\n)",
+        "InvariantScript": "Filter(\n    wSubNavigation,\n    ButtonID = oSelectedButton\n)",
         "Property": "zMenuItems",
         "RuleProviderType": "System"
       },
@@ -2107,6 +2100,7 @@
       "Category": 0,
       "DisplayName": "zHome",
       "Hidden": false,
+      "IsResettable": true,
       "Name": "zHome",
       "PropertyDataTypeKey": "Screen",
       "Tooltip": "A custom property",
@@ -2116,7 +2110,6 @@
       "Category": 0,
       "DisplayName": "zMenuItems",
       "Hidden": false,
-      "IsResettable": true,
       "Name": "zMenuItems",
       "PropertyDataTypeKey": "Table",
       "Tooltip": "A custom property",
@@ -2131,7 +2124,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638599863647172446",
+  "LastModifiedTimestamp": "638599904390677315",
   "Name": "89b7dffe68ab42459bbfc5305bec16dc",
   "OverridableProperties": {},
   "Version": "1.0"

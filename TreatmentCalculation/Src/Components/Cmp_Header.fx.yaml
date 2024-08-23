@@ -4,6 +4,7 @@ Cmp_Header As CanvasComponent:
     Width: =App.DesignWidth
     X: =0
     Y: =0
+    zHeaderSubTitle: ="Text"
     zHeaderTitle: ="Text"
     ZIndex: =1
     zShowIcon: =true
@@ -34,6 +35,7 @@ Cmp_Header As CanvasComponent:
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(106, 122, 127, 1)
         Height: =Parent.Height
+        PaddingBottom: =20
         Size: =28
         Text: =Cmp_Header.zHeaderTitle
         Weight: ='TextCanvas.Weight'.Semibold
@@ -41,6 +43,20 @@ Cmp_Header As CanvasComponent:
         X: =Cmp_Ico_Back.X + Cmp_Ico_Back.Width + 10
         Y: =0
         ZIndex: =2
+
+    Cmp_Lbl_SubTitle As Text:
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(106, 122, 127, 1)
+        FontItalic: =true
+        Height: =49
+        PaddingBottom: =10
+        Size: =20
+        Text: =Cmp_Header.zHeaderSubTitle
+        Weight: ='TextCanvas.Weight'.Semibold
+        Width: =Cmp_Img_Logo.X - Self.X
+        X: =Cmp_Ico_Back.X + Cmp_Ico_Back.Width + 10
+        Y: =50
+        ZIndex: =3
 
     Cmp_Img_Logo As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -54,5 +70,5 @@ Cmp_Header As CanvasComponent:
         PaddingTop: =10
         Width: =175
         X: =Parent.Width - Self.Width
-        ZIndex: =3
+        ZIndex: =4
 

@@ -7,12 +7,9 @@ Cmp_Navigation As CanvasComponent:
     zHome: =Scr00_MainScreen
     ZIndex: =1
     zMenuItems: |-
-        =SortByColumns(
-            Filter(
-                wSubNavigation,
-                ButtonID = oSelectedButton
-            ),
-            "ID", SortOrder.Ascending
+        =Filter(
+            wSubNavigation,
+            ButtonID = oSelectedButton
         )
 
     Cmp_Cnt_Home As groupContainer.manualLayoutContainer:

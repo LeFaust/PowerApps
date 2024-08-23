@@ -22,6 +22,7 @@ Scr00_MainScreen As screen:
         x00_Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
+            zHeaderSubTitle: =
             zHeaderTitle: ="Water Treatment"
             zShowIcon: =false
 
