@@ -3,8 +3,11 @@ Scr01_CoolingWaterTreatment As screen:
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =Set(oSelectedButton, "N01");
 
     x01_Cnt_Header As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
         DropShadow: =DropShadow.Semibold
         Height: =100
         RadiusBottomLeft: =10
@@ -19,17 +22,182 @@ Scr01_CoolingWaterTreatment As screen:
         x01_Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
+            zHeaderTitle: ="Cooling Water Treatment"
 
     x01_Cnt_Navigation As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
         DropShadow: =DropShadow.Bold
         Height: =100
-        RadiusBottomLeft: =4
-        RadiusBottomRight: =4
-        RadiusTopLeft: =4
-        RadiusTopRight: =4
         Width: =App.DesignWidth
         Y: =Parent.Height - Self.Height
         ZIndex: =2
 
         x01_Cmp_Navigation As Cmp_Navigation:
+
+    Container4 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Bold
+        Height: =464
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =600
+        X: =20
+        Y: =550
+        ZIndex: =3
+
+        TextCanvas3 As Text:
+            AutoHeight: =false
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =22
+            Text: ="Evaporation Loss"
+            Width: =120
+            X: =15
+            Y: =15
+            ZIndex: =1
+
+        "x01_Inp_CyclesOfConcentration_3 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            OnChange: =Set(oCirculationRate, Value(Self.Value))
+            Value: =(oEFactor * oCirculationRate * 1.8 * oDeltaTemp) / 1000
+            Width: =100
+            X: =15
+            Y: =37
+            ZIndex: =2
+
+        TextCanvas3_1 As Text:
+            AutoHeight: =false
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =22
+            Text: ="Blowdown Loss"
+            Width: =120
+            X: =147
+            Y: =15
+            ZIndex: =3
+
+        "x01_Inp_CyclesOfConcentration_4 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            OnChange: =Set(oCirculationRate, Value(Self.Value))
+            Value: =(oEFactor * oCirculationRate * 1.8 * oDeltaTemp) / ((oCycles - 1) * 1000)
+            Width: =100
+            X: =147
+            Y: =37
+            ZIndex: =4
+
+        TextCanvas3_2 As Text:
+            AutoHeight: =false
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =22
+            Text: ="Drift Loss"
+            Width: =120
+            X: =285
+            Y: =15
+            ZIndex: =5
+
+        "x01_Inp_CyclesOfConcentration_5 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            OnChange: =Set(oCirculationRate, Value(Self.Value))
+            Value: =oDFactor * oCirculationRate / 100
+            Width: =100
+            X: =285
+            Y: =37
+            ZIndex: =6
+
+    TextCanvas2 As Text:
+        DisplayMode: =DisplayMode.Edit
+        Height: =29
+        Size: =14
+        Text: ="m" & Char(179) & "/hr"
+        Width: =160
+        X: =427
+        Y: =264
+        ZIndex: =4
+
+    "x01_Inp_CyclesOfConcentration As 'Text input'":
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        OnChange: =Set(oCycles, Value(Self.Value))
+        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+        Value: =
+        Width: =101
+        X: =486
+        Y: =153
+        ZIndex: =5
+
+    "x01_Inp_CyclesOfConcentration_1 As 'Text input'":
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        OnChange: =Set(oDeltaTemp, Value(Self.Value))
+        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+        Value: =
+        Width: =101
+        X: =486
+        Y: =206
+        ZIndex: =6
+
+    "x01_Inp_CyclesOfConcentration_2 As 'Text input'":
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        OnChange: =Set(oCirculationRate, Value(Self.Value))
+        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+        Value: =
+        Width: =101
+        X: =486
+        Y: =261
+        ZIndex: =7
+
+    "x01_Inp_CyclesOfConcentration_7 As 'Text input'":
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        OnChange: =Set(oEFactor, Value(Self.Value))
+        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+        Value: =
+        Width: =101
+        X: =486
+        Y: =317
+        ZIndex: =8
+
+    "x01_Inp_CyclesOfConcentration_8 As 'Text input'":
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        OnChange: =Set(oDFactor, Value(Self.Value))
+        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+        Value: =
+        Width: =101
+        X: =486
+        Y: =378
+        ZIndex: =9
 

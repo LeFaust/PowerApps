@@ -93,7 +93,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "35",
+            "InvariantScript": "28",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -824,7 +824,7 @@
       "zHeaderTitle",
       "zShowIcon"
     ],
-    "LastModifiedTimestamp": "638599638853719376",
+    "LastModifiedTimestamp": "638599652063423969",
     "Name": "Cmp_Header",
     "Rules": [
       {
@@ -914,7 +914,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638599638853719376",
+  "LastModifiedTimestamp": "638599652063423969",
   "Name": "04ce6f2b9ab1410189143e07b518a872",
   "OverridableProperties": {},
   "Version": "1.0"

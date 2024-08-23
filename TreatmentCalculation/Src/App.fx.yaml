@@ -10,20 +10,17 @@ App As appinfo:
                 ID: "NN01",
                 Icon: CoolingTower,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N01",
                 ID: "NN02",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N01",
                 ID: "NN03",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N01",
                 ID: "NN04",
                 Icon: SampleImage,
@@ -36,20 +33,17 @@ App As appinfo:
                 ID: "NN05",
                 Icon: Boiler,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N02",
                 ID: "NN06",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N02",
                 ID: "NN07",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N02",
                 ID: "NN08",
                 Icon: SampleImage,
@@ -62,20 +56,17 @@ App As appinfo:
                 ID: "NN09",
                 Icon: ReverseOsmosis,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N03",
                 ID: "NN10",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N03",
                 ID: "NN11",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N03",
                 ID: "NN12",
                 Icon: SampleImage,
@@ -88,20 +79,17 @@ App As appinfo:
                 ID: "NN13",
                 Icon: WaterSoftener,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N04",
                 ID: "NN14",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N04",
                 ID: "NN15",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N04",
                 ID: "NN16",
                 Icon: SampleImage,
@@ -114,20 +102,17 @@ App As appinfo:
                 ID: "NN17",
                 Icon: WasteWater,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N05",
                 ID: "NN18",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N05",
                 ID: "NN19",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N05",
                 ID: "NN20",
                 Icon: SampleImage,
@@ -140,20 +125,17 @@ App As appinfo:
                 ID: "NN21",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N06",
                 ID: "NN22",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N06",
                 ID: "NN23",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N06",
                 ID: "NN24",
                 Icon: SampleImage,
@@ -166,20 +148,17 @@ App As appinfo:
                 ID: "NN25",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N07",
                 ID: "NN26",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N07",
                 ID: "NN27",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N07",
                 ID: "NN28",
                 Icon: SampleImage,
@@ -192,20 +171,17 @@ App As appinfo:
                 ID: "NN29",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N08",
                 ID: "NN30",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N08",
                 ID: "NN31",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N08",
                 ID: "NN32",
                 Icon: SampleImage,
@@ -218,20 +194,17 @@ App As appinfo:
                 ID: "NN33",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N09",
                 ID: "NN34",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N09",
                 ID: "NN35",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N09",
                 ID: "NN36",
                 Icon: SampleImage,
@@ -244,20 +217,17 @@ App As appinfo:
                 ID: "NN37",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N10",
                 ID: "NN38",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N10",
                 ID: "NN39",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N10",
                 ID: "NN40",
                 Icon: SampleImage,
@@ -270,20 +240,17 @@ App As appinfo:
                 ID: "NN41",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N11",
                 ID: "NN42",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N11",
                 ID: "NN43",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N11",
                 ID: "NN44",
                 Icon: SampleImage,
@@ -296,20 +263,17 @@ App As appinfo:
                 ID: "NN45",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N12",
                 ID: "NN46",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N12",
                 ID: "NN47",
                 Icon: SampleImage,
                 Screen : 'Scr00_WelcomeScreen'
-            },
-            {
+            }, {
                 ButtonID : "N12",
                 ID: "NN48",
                 Icon: SampleImage,

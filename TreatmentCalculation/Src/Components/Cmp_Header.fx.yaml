@@ -34,7 +34,7 @@ Cmp_Header As CanvasComponent:
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(106, 122, 127, 1)
         Height: =Parent.Height
-        Size: =35
+        Size: =28
         Text: =Cmp_Header.zHeaderTitle
         Weight: ='TextCanvas.Weight'.Semibold
         Width: =Cmp_Img_Logo.X - Self.X
