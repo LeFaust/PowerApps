@@ -1,76 +1,144 @@
 App As appinfo:
     BackEnabled: =true
     OnStart: |
-        =// --- Setup Navigation Menu
+        =// --- Setup Main Navigation Menu
         ClearCollect(
-            oNavigation,
-            // --- Button 01
+            wMainNavigation,
+            // --- Button 01 : Cooling Water Treatment
+            {
+                ButtonID : "N01",
+                Name: "Cooling Water Treatment",
+                Icon: CoolingTower,
+                Screen : Scr01_CWTInformation
+            }, {
+                ButtonID : "N02",
+                Name: "Chilled Water Treatment",
+                Icon: Chiller,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N03",
+                Name: "EvapCo Water Treatment",
+                Icon: SampleImage,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N04",
+                Name: "Boiler Water Treatment",
+                Icon: Boiler,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N05",
+                Name: "Water Filter",
+                Icon: WaterFilter,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N06",
+                Name: "Water Softener",
+                Icon: WaterSoftener,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N07",
+                Name: "Demineralizer",
+                Icon: SampleImage,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N08",
+                Name: "Reverse Osmosis",
+                Icon: ReverseOsmosis,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N09",
+                Name: "Waste Water Treatment",
+                Icon: WasteWater,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N10",
+                Name: "Swimming Pool",
+                Icon: SwimmingPool,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N11",
+                Name: "Treatment",
+                Icon: SampleImage,
+                Screen : Scr00_MainScreen
+            }, {
+                ButtonID : "N12",
+                Name: "Treatment",
+                Icon: SampleImage,
+                Screen : Scr00_MainScreen
+            }
+        );
+        
+        
+        // --- Setup Sub Navigation Menu
+        ClearCollect(
+            wSubNavigation,
+            // --- Button 01 : Cooling Water Treatment
             {
                 ButtonID : "N01",
                 ID: "NN01",
-                Icon: CoolingTower,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Analysis,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N01",
                 ID: "NN02",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Clipboard,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N01",
                 ID: "NN03",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Calculator,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N01",
                 ID: "NN04",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Chemicals,
+                Screen : Scr00_MainScreen
             },
         
-            // --- Button 02
+            // --- Button 02 : Chilled Water Treatment
             {
                 ButtonID : "N02",
                 ID: "NN05",
-                Icon: Boiler,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Clipboard,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N02",
                 ID: "NN06",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Calculator,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N02",
                 ID: "NN07",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Chemicals,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N02",
                 ID: "NN08",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: PotFeeder,
+                Screen : Scr00_MainScreen
             },
         
-            // --- Button 03
+            // --- Button 03 : Boiler Water Treatment
             {
                 ButtonID : "N03",
                 ID: "NN09",
-                Icon: ReverseOsmosis,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Analysis,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N03",
                 ID: "NN10",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Clipboard,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N03",
                 ID: "NN11",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Calculator,
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N03",
                 ID: "NN12",
-                Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Icon: Chemicals,
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 04
@@ -78,22 +146,22 @@ App As appinfo:
                 ButtonID : "N04",
                 ID: "NN13",
                 Icon: WaterSoftener,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N04",
                 ID: "NN14",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N04",
                 ID: "NN15",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N04",
                 ID: "NN16",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 05
@@ -101,22 +169,22 @@ App As appinfo:
                 ButtonID : "N05",
                 ID: "NN17",
                 Icon: WasteWater,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N05",
                 ID: "NN18",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N05",
                 ID: "NN19",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N05",
                 ID: "NN20",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 06
@@ -124,22 +192,22 @@ App As appinfo:
                 ButtonID : "N06",
                 ID: "NN21",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N06",
                 ID: "NN22",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N06",
                 ID: "NN23",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N06",
                 ID: "NN24",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 07
@@ -147,22 +215,22 @@ App As appinfo:
                 ButtonID : "N07",
                 ID: "NN25",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N07",
                 ID: "NN26",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N07",
                 ID: "NN27",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N07",
                 ID: "NN28",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 08
@@ -170,22 +238,22 @@ App As appinfo:
                 ButtonID : "N08",
                 ID: "NN29",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N08",
                 ID: "NN30",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N08",
                 ID: "NN31",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N08",
                 ID: "NN32",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 09
@@ -193,22 +261,22 @@ App As appinfo:
                 ButtonID : "N09",
                 ID: "NN33",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N09",
                 ID: "NN34",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N09",
                 ID: "NN35",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N09",
                 ID: "NN36",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 10
@@ -216,22 +284,22 @@ App As appinfo:
                 ButtonID : "N10",
                 ID: "NN37",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N10",
                 ID: "NN38",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N10",
                 ID: "NN39",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N10",
                 ID: "NN40",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 11
@@ -239,22 +307,22 @@ App As appinfo:
                 ButtonID : "N11",
                 ID: "NN41",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N11",
                 ID: "NN42",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N11",
                 ID: "NN43",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N11",
                 ID: "NN44",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             },
         
             // --- Button 12
@@ -262,24 +330,25 @@ App As appinfo:
                 ButtonID : "N12",
                 ID: "NN45",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N12",
                 ID: "NN46",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N12",
                 ID: "NN47",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }, {
                 ButtonID : "N12",
                 ID: "NN48",
                 Icon: SampleImage,
-                Screen : 'Scr00_WelcomeScreen'
+                Screen : Scr00_MainScreen
             }
         );
+    StartScreen: =Scr00_MainScreen
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

@@ -4,36 +4,12 @@ Cmp_Navigation As CanvasComponent:
     Width: =App.DesignWidth
     X: =0
     Y: =0
-    zHome: =Scr00_WelcomeScreen
+    zHome: =Scr00_MainScreen
     ZIndex: =1
     zMenuItems: |-
-        =/*Table(
-            {
-                ButtonID: "N01",
-                ID: "NN01",
-                Icon: CoolingTower,
-                Screen : App.ActiveScreen
-            },{
-                ButtonID: "N01",
-                ID: "NN02",
-                Icon: Boiler,
-                Screen : App.ActiveScreen
-            },{
-                ButtonID: "N01",
-                ID: "NN03",
-                Icon: WaterSoftener,
-                Screen : App.ActiveScreen
-            },{
-                ButtonID: "N01",
-                ID: "NN04",
-                Icon: WasteWater,
-                Screen : App.ActiveScreen
-            }
-        )*/
-        
-        SortByColumns(
+        =SortByColumns(
             Filter(
-                oNavigation,
+                wSubNavigation,
                 ButtonID = oSelectedButton
             ),
             "ID", SortOrder.Ascending
