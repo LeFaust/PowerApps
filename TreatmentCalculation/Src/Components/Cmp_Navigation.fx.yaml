@@ -11,6 +11,7 @@ Cmp_Navigation As CanvasComponent:
             wSubNavigation,
             ButtonID = oSelectedButton
         )
+    zSelectedSubButton: =oSelectedSubButton
 
     Cmp_Cnt_Home As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
@@ -70,7 +71,11 @@ Cmp_Navigation As CanvasComponent:
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Height: =Parent.Height
-        Items: =Cmp_Navigation.zMenuItems
+        Items: |-
+            =SortByColumns(
+                Cmp_Navigation.zMenuItems,
+                "ID", SortOrder.Ascending
+            )
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =10
@@ -98,7 +103,7 @@ Cmp_Navigation As CanvasComponent:
             Width: =80
             X: =0 + 0
             Y: =0 + 0
-            ZIndex: =1
+            ZIndex: =2
 
         Gal_Btn_Button As button:
             BorderColor: =
@@ -107,14 +112,21 @@ Cmp_Navigation As CanvasComponent:
             DisabledBorderColor: =RGBA(244, 244, 244, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 0)
+            Fill: |-
+                =If(
+                    oSelectedSubButton = ThisItem.ID,
+                    RGBA(0, 14, 46, 0.3),
+                    RGBA(0, 0, 0, 0)
+                )
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Semibold
             Height: =80 + 0
             HoverBorderColor: =App.Theme.Colors.Darker10
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 14, 46, 0.3)
-            OnSelect: =Navigate(ThisItem.Screen)
+            OnSelect: |-
+                =Set(oSelectedSubButton, ThisItem.ID);
+                Navigate(ThisItem.Screen)
             PressedBorderColor: =App.Theme.Colors.Darker40
             PressedColor: =Self.Color
             PressedFill: =RGBA(0, 14, 46, 0.6)
@@ -123,5 +135,5 @@ Cmp_Navigation As CanvasComponent:
             Width: =80 + 0
             X: =0 + 0
             Y: =0 + 0
-            ZIndex: =2
+            ZIndex: =3
 

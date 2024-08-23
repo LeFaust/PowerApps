@@ -35,20 +35,8 @@ Scr01_2_CWTEvaluation As screen:
         ZIndex: =2
 
         x01_2_Cmp_Navigation As Cmp_Navigation:
-            Width: =500
-
-    TextCanvas2_7 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =150 + 0
-        Text: |-
-            =oSelectedButton & Char(10) &
-            First(SortByColumns(FirstN(Filter(wSubNavigation, ButtonID = oSelectedButton), 1),"ID", SortOrder.Descending)).ID & Char(10) &
-            First(SortByColumns(FirstN(Filter(wSubNavigation, ButtonID = oSelectedButton), 2),"ID", SortOrder.Descending)).ID & Char(10) &
-            First(SortByColumns(FirstN(Filter(wSubNavigation, ButtonID = oSelectedButton), 3),"ID", SortOrder.Descending)).ID & Char(10) &
-            First(SortByColumns(FirstN(Filter(wSubNavigation, ButtonID = oSelectedButton), 4),"ID", SortOrder.Descending)).ID
-        VerticalAlign: ='TextCanvas.VerticalAlign'.Top
-        Width: =96
-        X: =50 + 0
-        Y: =200 + 0
-        ZIndex: =3
+            Height: =Parent.Height
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
 

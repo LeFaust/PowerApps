@@ -40,6 +40,9 @@ Scr00_MainScreen As screen:
         ZIndex: =2
 
         x00_Cmp_Navigation As Cmp_Navigation:
+            Height: =Parent.Height
+            X: =0 + 0
+            Y: =0 + 0
 
     "x00_Gal_MainNavigation As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
