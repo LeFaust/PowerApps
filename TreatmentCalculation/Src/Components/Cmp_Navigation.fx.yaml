@@ -11,7 +11,6 @@ Cmp_Navigation As CanvasComponent:
             wSubNavigation,
             ButtonID = oSelectedButton
         )
-    zSelectedSubButton: =oSelectedSubButton
 
     Cmp_Cnt_Home As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
@@ -112,21 +111,14 @@ Cmp_Navigation As CanvasComponent:
             DisabledBorderColor: =RGBA(244, 244, 244, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: |-
-                =If(
-                    oSelectedSubButton = ThisItem.ID,
-                    RGBA(0, 14, 46, 0.3),
-                    RGBA(0, 0, 0, 0)
-                )
+            Fill: =RGBA(0, 0, 0, 0)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Semibold
             Height: =80 + 0
             HoverBorderColor: =App.Theme.Colors.Darker10
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 14, 46, 0.3)
-            OnSelect: |-
-                =Set(oSelectedSubButton, ThisItem.ID);
-                Navigate(ThisItem.Screen)
+            OnSelect: =Navigate(ThisItem.Screen)
             PressedBorderColor: =App.Theme.Colors.Darker40
             PressedColor: =Self.Color
             PressedFill: =RGBA(0, 14, 46, 0.6)

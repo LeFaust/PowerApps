@@ -39,3 +39,372 @@ Scr01_1_CWTInformation As screen:
             X: =0 + 0
             Y: =0 + 0
 
+    x01_1_Cnt_WaterAnalysis As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Light
+        Height: =450
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =400
+        X: =15 + 0
+        Y: =x01_1_Cnt_Header.Y + x01_1_Cnt_Header.Height + 20
+        ZIndex: =3
+
+        TextCanvas3 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            PaddingTop: =10
+            Size: =18
+            Text: ="MakeUp Water Analysis"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        "TextInputCanvas1 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =66
+            ZIndex: =2
+
+        "TextInputCanvas1_1 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =98
+            ZIndex: =3
+
+        "TextInputCanvas1_2 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =130
+            ZIndex: =4
+
+        "TextInputCanvas1_3 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =162
+            ZIndex: =5
+
+        "TextInputCanvas1_4 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =194
+            ZIndex: =6
+
+        "TextInputCanvas1_5 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =226
+            ZIndex: =7
+
+        "TextInputCanvas1_6 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =258
+            ZIndex: =8
+
+        "TextInputCanvas1_7 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =290
+            ZIndex: =9
+
+        "TextInputCanvas1_8 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =322
+            ZIndex: =10
+
+        "TextInputCanvas1_9 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =198
+            Y: =354
+            ZIndex: =11
+
+        "TextInputCanvas1_10 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =66
+            ZIndex: =12
+
+        "TextInputCanvas1_11 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =98
+            ZIndex: =13
+
+        "TextInputCanvas1_12 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =130
+            ZIndex: =14
+
+        "TextInputCanvas1_13 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =162
+            ZIndex: =15
+
+        "TextInputCanvas1_14 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =194
+            ZIndex: =16
+
+        "TextInputCanvas1_15 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =226
+            ZIndex: =17
+
+        "TextInputCanvas1_16 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =258
+            ZIndex: =18
+
+        "TextInputCanvas1_17 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =290
+            ZIndex: =19
+
+        "TextInputCanvas1_18 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =322
+            ZIndex: =20
+
+        "TextInputCanvas1_19 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =354
+            ZIndex: =21
+
+    x01_1_Cnt_SaturationIndex As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Light
+        Height: =x01_1_Cnt_WaterAnalysis.Height
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width - Self.X - 15
+        X: =x01_1_Cnt_WaterAnalysis.X + x01_1_Cnt_WaterAnalysis.Width + 15
+        Y: =x01_1_Cnt_Header.Y + x01_1_Cnt_Header.Height + 20
+        ZIndex: =4
+
+        TextCanvas3_1 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            PaddingTop: =10
+            Size: =18
+            Text: ="Saturation Index"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        "TextInputCanvas1_20 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =TextCanvas3_1.Y + TextCanvas3_1.Height + 10
+            ZIndex: =2
+
+        "TextInputCanvas1_21 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =86
+            ZIndex: =3
+
+        "TextInputCanvas1_22 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =118
+            ZIndex: =4
+
+        "TextInputCanvas1_23 As 'Text input'":
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Width: =73
+            X: =Parent.Width - Self.Width - 15
+            Y: =150
+            ZIndex: =5
+
+    x01_1_Cnt_SystemData As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Light
+        Height: =x01_1_Cnt_Navigation.Y - Self.Y - 20
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width - 2 * Self.X
+        X: =15 + 0
+        Y: =x01_1_Cnt_WaterAnalysis.Y + x01_1_Cnt_WaterAnalysis.Height + 15
+        ZIndex: =5
+
+        TextCanvas3_2 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            PaddingTop: =10
+            Size: =18
+            Text: ="System Data"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
