@@ -434,7 +434,14 @@
               "DisabledColor",
               "PressedColor",
               "HoverColor",
-              "DisplayMode",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "DisplayMode.Edit",
+                "InvariantPropertyName": "DisplayMode",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               {
                 "AFDDataSourceName": "",
                 "AutoRuleBindingEnabled": false,
@@ -443,7 +450,14 @@
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
               },
-              "DisabledFill",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "RGBA(244, 244, 244, 1)",
+                "InvariantPropertyName": "DisabledFill",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               {
                 "AFDDataSourceName": "",
                 "AutoRuleBindingEnabled": false,
@@ -607,21 +621,21 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "DisplayMode.Edit",
+                "InvariantScript": "If(\r\n    Cmp_Navigation.zSubNavigation = ThisItem.ID,\r\n    DisplayMode.Disabled,\r\n    DisplayMode.Edit\r\n)",
                 "Property": "DisplayMode",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(\r\n    Cmp_Navigation.zSubNavigation = ThisItem.ID,\r\n    RGBA(0, 14, 46, 0.3),\r\n    RGBA(0, 0, 0, 0)\r\n)",
+                "InvariantScript": "RGBA(0, 0, 0, 0)",
                 "Property": "Fill",
                 "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(244, 244, 244, 1)",
+                "InvariantScript": "RGBA(0, 14, 46, 0.6)",
                 "Property": "DisabledFill",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
@@ -2041,7 +2055,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638600888697111279",
+    "LastModifiedTimestamp": "638600896024434198",
     "Name": "Cmp_Navigation",
     "Rules": [
       {
@@ -2058,7 +2072,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "",
+        "InvariantScript": "Left(App.ActiveScreen.Name, 6)",
         "Property": "zSubNavigation",
         "RuleProviderType": "System"
       },
@@ -2147,7 +2161,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638600888697111279",
+  "LastModifiedTimestamp": "638600896024434198",
   "Name": "89b7dffe68ab42459bbfc5305bec16dc",
   "OverridableProperties": {},
   "Version": "1.0"

@@ -3,8 +3,7 @@ Scr014_CWTChemicals As screen:
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: |-
-        =UpdateContext({xSubNavigation: "NN04"});
+    OnVisible: =
 
     x014_Cnt_Header As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)

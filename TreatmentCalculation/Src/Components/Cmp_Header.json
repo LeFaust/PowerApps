@@ -413,7 +413,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "175",
+            "InvariantScript": "120",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1033,7 +1033,7 @@
       "zShowIcon",
       "zHeaderSubTitle"
     ],
-    "LastModifiedTimestamp": "638600882393840822",
+    "LastModifiedTimestamp": "638601093441202038",
     "Name": "Cmp_Header",
     "Rules": [
       {
@@ -1138,7 +1138,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638600882393840822",
+  "LastModifiedTimestamp": "638601093441202038",
   "Name": "04ce6f2b9ab1410189143e07b518a872",
   "OverridableProperties": {},
   "Version": "1.0"

@@ -22,7 +22,7 @@ Scr00_MainScreen As screen:
         x00Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
-            zHeaderSubTitle: =
+            zHeaderSubTitle: ="Main Navigation Screen"
             zHeaderTitle: ="Water Treatment"
             zShowIcon: =false
 
@@ -87,7 +87,7 @@ Scr00_MainScreen As screen:
                 PaddingBottom: =40
                 PaddingLeft: =10
                 PaddingRight: =10
-                PaddingTop: =10
+                PaddingTop: =15
                 Width: =Parent.Width
                 X: =0 + 0
                 Y: =0 + 0

@@ -3,8 +3,7 @@ Scr012_CWTEvaluation As screen:
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: |-
-        =UpdateContext({xSubNavigation: "NN02"});
+    OnVisible: =
 
     x012Cnt_Header As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)

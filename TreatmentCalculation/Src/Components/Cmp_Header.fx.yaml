@@ -68,7 +68,7 @@ Cmp_Header As CanvasComponent:
         PaddingLeft: =10
         PaddingRight: =10
         PaddingTop: =10
-        Width: =175
+        Width: =120
         X: =Parent.Width - Self.Width
         ZIndex: =4
 
