@@ -1,11 +1,11 @@
-Scr01_2_CWTEvaluation As screen:
+Scr022_CHWCalculation As screen:
     BackgroundImage: ='White Minimalist Poem Book Cover'
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: =
 
-    x01_2_Cnt_Header As groupContainer.manualLayoutContainer:
+    x022Cnt_Header As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Semibold
@@ -19,13 +19,13 @@ Scr01_2_CWTEvaluation As screen:
         Y: =20
         ZIndex: =1
 
-        x01_2_Cmp_Header As Cmp_Header:
+        x022Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
-            zHeaderSubTitle: ="Treatment Evaluation"
-            zHeaderTitle: ="Cooling Water Treatment"
+            zHeaderSubTitle: ="Treatment Calculation"
+            zHeaderTitle: ="Chilled Water Treatment"
 
-    x01_2_Cnt_Navigation As groupContainer.manualLayoutContainer:
+    x022Cnt_Navigation As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Bold
@@ -34,9 +34,8 @@ Scr01_2_CWTEvaluation As screen:
         Y: =Parent.Height - Self.Height
         ZIndex: =2
 
-        x01_2_Cmp_Navigation As Cmp_Navigation:
+        x022Cmp_Navigation As Cmp_Navigation:
             Height: =Parent.Height
-            Width: =Parent.Width
             X: =0 + 0
             Y: =0 + 0
 

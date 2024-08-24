@@ -1,11 +1,12 @@
-Scr01_3_CWTCalculation As screen:
+Scr013_CWTCalculation As screen:
     BackgroundImage: ='White Minimalist Poem Book Cover'
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({xSubNavigation: "NN03"});
 
-    x01_3_Cnt_Header As groupContainer.manualLayoutContainer:
+    x013_Cnt_Header As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Semibold
@@ -19,13 +20,13 @@ Scr01_3_CWTCalculation As screen:
         Y: =20
         ZIndex: =1
 
-        x01_3_Cmp_Header As Cmp_Header:
+        x013_Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
             zHeaderSubTitle: ="Treatment Calculations"
             zHeaderTitle: ="Cooling Water Treatment"
 
-    x01_3_Cnt_Navigation As groupContainer.manualLayoutContainer:
+    x013_Cnt_Navigation As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Bold
@@ -34,12 +35,12 @@ Scr01_3_CWTCalculation As screen:
         Y: =Parent.Height - Self.Height
         ZIndex: =2
 
-        x01_3_Cmp_Navigation As Cmp_Navigation:
+        x013_Cmp_Navigation As Cmp_Navigation:
             Height: =Parent.Height
             X: =0 + 0
             Y: =0 + 0
 
-    Container4_1 As groupContainer.manualLayoutContainer:
+    Container41 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Bold
@@ -64,7 +65,7 @@ Scr01_3_CWTCalculation As screen:
             Y: =15
             ZIndex: =1
 
-        "x01_Inp_CyclesOfConcentration_6 As 'Text input'":
+        "x01Inp_CyclesOfConcentration_6 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -88,7 +89,7 @@ Scr01_3_CWTCalculation As screen:
             Y: =15
             ZIndex: =3
 
-        "x01_Inp_CyclesOfConcentration_9 As 'Text input'":
+        "x01Inp_CyclesOfConcentration_9 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -112,7 +113,7 @@ Scr01_3_CWTCalculation As screen:
             Y: =15
             ZIndex: =5
 
-        "x01_Inp_CyclesOfConcentration_10 As 'Text input'":
+        "x01Inp_CyclesOfConcentration10 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -125,7 +126,7 @@ Scr01_3_CWTCalculation As screen:
             Y: =37
             ZIndex: =6
 
-    TextCanvas2_1 As Text:
+    TextCanvas21 As Text:
         DisplayMode: =DisplayMode.Edit
         Height: =29
         Size: =14
@@ -135,7 +136,7 @@ Scr01_3_CWTCalculation As screen:
         Y: =264
         ZIndex: =4
 
-    "x01_Inp_CyclesOfConcentration_11 As 'Text input'":
+    "x01Inp_CyclesOfConcentration11 As 'Text input'":
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =1
@@ -149,7 +150,7 @@ Scr01_3_CWTCalculation As screen:
         Y: =153
         ZIndex: =5
 
-    "x01_Inp_CyclesOfConcentration_12 As 'Text input'":
+    "x01Inp_CyclesOfConcentration12 As 'Text input'":
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =1
@@ -163,7 +164,7 @@ Scr01_3_CWTCalculation As screen:
         Y: =206
         ZIndex: =6
 
-    "x01_Inp_CyclesOfConcentration_13 As 'Text input'":
+    "x01Inp_CyclesOfConcentration13 As 'Text input'":
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =1
@@ -177,7 +178,7 @@ Scr01_3_CWTCalculation As screen:
         Y: =261
         ZIndex: =7
 
-    "x01_Inp_CyclesOfConcentration_14 As 'Text input'":
+    "x01Inp_CyclesOfConcentration14 As 'Text input'":
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =1
@@ -191,7 +192,7 @@ Scr01_3_CWTCalculation As screen:
         Y: =317
         ZIndex: =8
 
-    "x01_Inp_CyclesOfConcentration_15 As 'Text input'":
+    "x01Inp_CyclesOfConcentration15 As 'Text input'":
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =1

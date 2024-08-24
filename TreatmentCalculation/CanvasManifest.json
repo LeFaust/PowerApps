@@ -135,13 +135,13 @@
   },
   "ScreenOrder": [
     "Scr00_MainScreen",
-    "Scr01_1_CWTInformation",
-    "Scr01_2_CWTEvaluation",
-    "Scr01_3_CWTCalculation",
-    "Scr01_4_CWTChemicals",
-    "Scr02_1_CHWInformation",
-    "Scr02_2_CHWCalculation",
-    "Scr02_3_CHWChemicals",
-    "Scr02_4_PotFeeder"
+    "Scr011_CWTInformation",
+    "Scr012_CWTEvaluation",
+    "Scr013_CWTCalculation",
+    "Scr014_CWTChemicals",
+    "Scr021_CHWInformation",
+    "Scr022_CHWCalculation",
+    "Scr023_CHWChemicals",
+    "Scr024_PotFeeder"
   ]
 }

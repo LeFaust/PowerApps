@@ -1,11 +1,11 @@
-Scr02_3_CHWChemicals As screen:
+Scr021_CHWInformation As screen:
     BackgroundImage: ='White Minimalist Poem Book Cover'
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: =
 
-    x02_3_Cnt_Header As groupContainer.manualLayoutContainer:
+    x021Cnt_Header As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Semibold
@@ -19,13 +19,13 @@ Scr02_3_CHWChemicals As screen:
         Y: =20
         ZIndex: =1
 
-        x02_3_Cmp_Header As Cmp_Header:
+        x021Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
-            zHeaderSubTitle: ="Treatment Chemicals"
+            zHeaderSubTitle: ="System Data"
             zHeaderTitle: ="Chilled Water Treatment"
 
-    x02_3_Cnt_Navigation As groupContainer.manualLayoutContainer:
+    x021Cnt_Navigation As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Bold
@@ -34,7 +34,7 @@ Scr02_3_CHWChemicals As screen:
         Y: =Parent.Height - Self.Height
         ZIndex: =2
 
-        x02_3_Cmp_Navigation As Cmp_Navigation:
+        x021Cmp_Navigation As Cmp_Navigation:
             Height: =Parent.Height
             X: =0 + 0
             Y: =0 + 0

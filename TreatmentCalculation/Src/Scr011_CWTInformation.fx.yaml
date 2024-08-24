@@ -1,11 +1,12 @@
-Scr01_1_CWTInformation As screen:
+Scr011_CWTInformation As screen:
     BackgroundImage: ='White Minimalist Poem Book Cover'
     Fill: =Color.SkyBlue
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({xSubNavigation: "NN01"});
 
-    x01_1_Cnt_Header As groupContainer.manualLayoutContainer:
+    x011Cnt_Header As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Semibold
@@ -19,13 +20,13 @@ Scr01_1_CWTInformation As screen:
         Y: =20
         ZIndex: =1
 
-        x01_1_Cmp_Header As Cmp_Header:
+        x011Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
             zHeaderSubTitle: ="SystemData / Water Analysis"
             zHeaderTitle: ="Cooling Water Treatment"
 
-    x01_1_Cnt_Navigation As groupContainer.manualLayoutContainer:
+    x011Cnt_Navigation As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Bold
@@ -34,12 +35,12 @@ Scr01_1_CWTInformation As screen:
         Y: =Parent.Height - Self.Height
         ZIndex: =2
 
-        x01_1_Cmp_Navigation As Cmp_Navigation:
+        x011Cmp_Navigation As Cmp_Navigation:
             Height: =Parent.Height
             X: =0 + 0
             Y: =0 + 0
 
-    x01_1_Cnt_WaterAnalysis As groupContainer.manualLayoutContainer:
+    x011Cnt_WaterAnalysis As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Light
@@ -50,7 +51,7 @@ Scr01_1_CWTInformation As screen:
         RadiusTopRight: =10
         Width: =400
         X: =15 + 0
-        Y: =x01_1_Cnt_Header.Y + x01_1_Cnt_Header.Height + 20
+        Y: =x011Cnt_Header.Y + x011Cnt_Header.Height + 20
         ZIndex: =3
 
         TextCanvas3 As Text:
@@ -78,7 +79,7 @@ Scr01_1_CWTInformation As screen:
             Y: =66
             ZIndex: =2
 
-        "TextInputCanvas1_1 As 'Text input'":
+        "TextInputCanvas11 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -90,7 +91,7 @@ Scr01_1_CWTInformation As screen:
             Y: =98
             ZIndex: =3
 
-        "TextInputCanvas1_2 As 'Text input'":
+        "TextInputCanvas12 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -102,7 +103,7 @@ Scr01_1_CWTInformation As screen:
             Y: =130
             ZIndex: =4
 
-        "TextInputCanvas1_3 As 'Text input'":
+        "TextInputCanvas13 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -114,7 +115,7 @@ Scr01_1_CWTInformation As screen:
             Y: =162
             ZIndex: =5
 
-        "TextInputCanvas1_4 As 'Text input'":
+        "TextInputCanvas14 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -126,7 +127,7 @@ Scr01_1_CWTInformation As screen:
             Y: =194
             ZIndex: =6
 
-        "TextInputCanvas1_5 As 'Text input'":
+        "TextInputCanvas15 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -138,7 +139,7 @@ Scr01_1_CWTInformation As screen:
             Y: =226
             ZIndex: =7
 
-        "TextInputCanvas1_6 As 'Text input'":
+        "TextInputCanvas16 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -150,7 +151,7 @@ Scr01_1_CWTInformation As screen:
             Y: =258
             ZIndex: =8
 
-        "TextInputCanvas1_7 As 'Text input'":
+        "TextInputCanvas17 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -162,7 +163,7 @@ Scr01_1_CWTInformation As screen:
             Y: =290
             ZIndex: =9
 
-        "TextInputCanvas1_8 As 'Text input'":
+        "TextInputCanvas18 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -174,7 +175,7 @@ Scr01_1_CWTInformation As screen:
             Y: =322
             ZIndex: =10
 
-        "TextInputCanvas1_9 As 'Text input'":
+        "TextInputCanvas19 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -186,7 +187,7 @@ Scr01_1_CWTInformation As screen:
             Y: =354
             ZIndex: =11
 
-        "TextInputCanvas1_10 As 'Text input'":
+        "TextInputCanvas110 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -198,7 +199,7 @@ Scr01_1_CWTInformation As screen:
             Y: =66
             ZIndex: =12
 
-        "TextInputCanvas1_11 As 'Text input'":
+        "TextInputCanvas111 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -210,7 +211,7 @@ Scr01_1_CWTInformation As screen:
             Y: =98
             ZIndex: =13
 
-        "TextInputCanvas1_12 As 'Text input'":
+        "TextInputCanvas112 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -222,7 +223,7 @@ Scr01_1_CWTInformation As screen:
             Y: =130
             ZIndex: =14
 
-        "TextInputCanvas1_13 As 'Text input'":
+        "TextInputCanvas113 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -234,7 +235,7 @@ Scr01_1_CWTInformation As screen:
             Y: =162
             ZIndex: =15
 
-        "TextInputCanvas1_14 As 'Text input'":
+        "TextInputCanvas114 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -246,7 +247,7 @@ Scr01_1_CWTInformation As screen:
             Y: =194
             ZIndex: =16
 
-        "TextInputCanvas1_15 As 'Text input'":
+        "TextInputCanvas115 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -258,7 +259,7 @@ Scr01_1_CWTInformation As screen:
             Y: =226
             ZIndex: =17
 
-        "TextInputCanvas1_16 As 'Text input'":
+        "TextInputCanvas116 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -270,7 +271,7 @@ Scr01_1_CWTInformation As screen:
             Y: =258
             ZIndex: =18
 
-        "TextInputCanvas1_17 As 'Text input'":
+        "TextInputCanvas117 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -282,7 +283,7 @@ Scr01_1_CWTInformation As screen:
             Y: =290
             ZIndex: =19
 
-        "TextInputCanvas1_18 As 'Text input'":
+        "TextInputCanvas118 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -294,7 +295,7 @@ Scr01_1_CWTInformation As screen:
             Y: =322
             ZIndex: =20
 
-        "TextInputCanvas1_19 As 'Text input'":
+        "TextInputCanvas119 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -306,21 +307,21 @@ Scr01_1_CWTInformation As screen:
             Y: =354
             ZIndex: =21
 
-    x01_1_Cnt_SaturationIndex As groupContainer.manualLayoutContainer:
+    x011Cnt_SaturationIndex As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Light
-        Height: =x01_1_Cnt_WaterAnalysis.Height
+        Height: =x011Cnt_WaterAnalysis.Height
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Width: =Parent.Width - Self.X - 15
-        X: =x01_1_Cnt_WaterAnalysis.X + x01_1_Cnt_WaterAnalysis.Width + 15
-        Y: =x01_1_Cnt_Header.Y + x01_1_Cnt_Header.Height + 20
+        X: =x011Cnt_WaterAnalysis.X + x011Cnt_WaterAnalysis.Width + 15
+        Y: =x011Cnt_Header.Y + x011Cnt_Header.Height + 20
         ZIndex: =4
 
-        TextCanvas3_1 As Text:
+        TextCanvas31 As Text:
             Align: ='TextCanvas.Align'.Center
             DisplayMode: =DisplayMode.Edit
             Height: =36
@@ -333,7 +334,7 @@ Scr01_1_CWTInformation As screen:
             Y: =0 + 0
             ZIndex: =1
 
-        "TextInputCanvas1_20 As 'Text input'":
+        "TextInputCanvas120 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -342,10 +343,10 @@ Scr01_1_CWTInformation As screen:
             Height: =32
             Width: =73
             X: =Parent.Width - Self.Width - 15
-            Y: =TextCanvas3_1.Y + TextCanvas3_1.Height + 10
+            Y: =TextCanvas31.Y + TextCanvas31.Height + 10
             ZIndex: =2
 
-        "TextInputCanvas1_21 As 'Text input'":
+        "TextInputCanvas121 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -357,7 +358,7 @@ Scr01_1_CWTInformation As screen:
             Y: =86
             ZIndex: =3
 
-        "TextInputCanvas1_22 As 'Text input'":
+        "TextInputCanvas122 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -369,7 +370,7 @@ Scr01_1_CWTInformation As screen:
             Y: =118
             ZIndex: =4
 
-        "TextInputCanvas1_23 As 'Text input'":
+        "TextInputCanvas123 As 'Text input'":
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -381,18 +382,18 @@ Scr01_1_CWTInformation As screen:
             Y: =150
             ZIndex: =5
 
-    x01_1_Cnt_SystemData As groupContainer.manualLayoutContainer:
+    x011Cnt_SystemData As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Light
-        Height: =x01_1_Cnt_Navigation.Y - Self.Y - 20
+        Height: =x011Cnt_Navigation.Y - Self.Y - 20
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Width: =Parent.Width - 2 * Self.X
         X: =15 + 0
-        Y: =x01_1_Cnt_WaterAnalysis.Y + x01_1_Cnt_WaterAnalysis.Height + 15
+        Y: =x011Cnt_WaterAnalysis.Y + x011Cnt_WaterAnalysis.Height + 15
         ZIndex: =5
 
         TextCanvas3_2 As Text:

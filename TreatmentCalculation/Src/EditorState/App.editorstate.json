@@ -67,7 +67,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnStart",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "ConstantData",
@@ -77,7 +77,7 @@
         {
           "Category": "OnDemandData",
           "PropertyName": "StartScreen",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
