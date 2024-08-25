@@ -59,30 +59,36 @@ Scr011_CWTInformation As screen:
             Height: =36
             PaddingTop: =10
             Size: =18
-            Text: ="MakeUp Water Analysis"
+            Text: ="Water Analysis"
             Weight: ='TextCanvas.Weight'.Semibold
-            Width: =236
+            Width: =Parent.Width
             X: =0 + 0
             Y: =0 + 0
             ZIndex: =1
 
-        x011Ico_BalanaceAnalysis As icon.Tools:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderThickness: =2
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =40
-            Icon: =Icon.Tools
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Rotation: =45
-            Width: =40
-            X: =252
-            Y: =9
-            ZIndex: =2
+        x011Lbl_MakeUpWater As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =38
+            Size: =12
+            Text: ="MakeUp Water"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =73
+            X: =236
+            Y: =40
+            ZIndex: =4
+
+        x011Lbl_CoolingWater As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =38
+            Size: =12
+            Text: ="Cooling Water"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =73
+            X: =312
+            Y: =40
+            ZIndex: =5
 
         x011Lbl_pH As Text:
             DisplayMode: =DisplayMode.Edit
@@ -91,8 +97,8 @@ Scr011_CWTInformation As screen:
             Text: ="pH"
             Width: =221
             X: =15
-            Y: =56
-            ZIndex: =3
+            Y: =78
+            ZIndex: =6
 
         "x011Inp_pH As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -107,8 +113,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =56
-            ZIndex: =4
+            Y: =78
+            ZIndex: =7
 
         "x011Inp_xpH As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -124,8 +130,8 @@ Scr011_CWTInformation As screen:
             Value: =
             Width: =73
             X: =Parent.Width - Self.Width - 15
-            Y: =56
-            ZIndex: =5
+            Y: =78
+            ZIndex: =8
 
         x011Lbl_TotalDissolvedSolids As Text:
             DisplayMode: =DisplayMode.Edit
@@ -134,8 +140,8 @@ Scr011_CWTInformation As screen:
             Text: ="Total Dissolved Solids (TDS), ppm"
             Width: =221
             X: =15
-            Y: =88
-            ZIndex: =6
+            Y: =110
+            ZIndex: =9
 
         "x011Inp_TotalDissolvedSolids As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -150,8 +156,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =88
-            ZIndex: =7
+            Y: =110
+            ZIndex: =10
 
         "x011Inp_xTotalDissolvedSolids As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -167,8 +173,8 @@ Scr011_CWTInformation As screen:
             Value: =Value(oCycles) * Value(x011Inp_TotalDissolvedSolids.Value)
             Width: =73
             X: =Parent.Width - Self.Width - 15
-            Y: =88
-            ZIndex: =8
+            Y: =110
+            ZIndex: =11
 
         x011Lbl_Conductivity As Text:
             DisplayMode: =DisplayMode.Edit
@@ -177,11 +183,12 @@ Scr011_CWTInformation As screen:
             Text: ="Conductivity, umhos"
             Width: =221
             X: =15
-            Y: =120
-            ZIndex: =9
+            Y: =142
+            ZIndex: =12
 
         "x011Inp_Conductivity As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
+            Appearance: ="FilledDarker"
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -193,8 +200,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =120
-            ZIndex: =10
+            Y: =142
+            ZIndex: =13
 
         "x011Inp_xConductivity As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -206,12 +213,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_Conductivity.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Conductivity.Value)
             Width: =73
-            X: =Parent.Width - Self.Width - 15
-            Y: =120
-            ZIndex: =11
+            X: =312
+            Y: =142
+            ZIndex: =14
 
         x011Lbl_PAlkalinity As Text:
             DisplayMode: =DisplayMode.Edit
@@ -220,8 +227,8 @@ Scr011_CWTInformation As screen:
             Text: ="P. Alkalinity, ppm CaCO3"
             Width: =221
             X: =15
-            Y: =152
-            ZIndex: =12
+            Y: =174
+            ZIndex: =15
 
         "x011Inp_PAlkalinity As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -236,8 +243,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =152
-            ZIndex: =13
+            Y: =174
+            ZIndex: =16
 
         "x011Inp_xPAlkalinity As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -249,12 +256,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_PAlkalinity.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_PAlkalinity.Value)
             Width: =73
-            X: =Parent.Width - Self.Width - 15
-            Y: =152
-            ZIndex: =14
+            X: =312
+            Y: =174
+            ZIndex: =17
 
         x011Lbl_MAlkalinity As Text:
             DisplayMode: =DisplayMode.Edit
@@ -263,8 +270,8 @@ Scr011_CWTInformation As screen:
             Text: ="M. Alkalinity, ppm CaCO3"
             Width: =221
             X: =15
-            Y: =184
-            ZIndex: =15
+            Y: =206
+            ZIndex: =18
 
         "x011Inp_MAlkalinity As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -279,8 +286,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =184
-            ZIndex: =16
+            Y: =206
+            ZIndex: =19
 
         "x011Inp_xMAlkalinity As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -292,12 +299,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_MAlkalinity.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_MAlkalinity.Value)
             Width: =73
-            X: =Parent.Width - Self.Width - 15
-            Y: =184
-            ZIndex: =17
+            X: =312
+            Y: =206
+            ZIndex: =20
 
         x011Lbl_CaHardness As Text:
             DisplayMode: =DisplayMode.Edit
@@ -306,8 +313,8 @@ Scr011_CWTInformation As screen:
             Text: ="Calcium Hardness, ppm CaCO3"
             Width: =221
             X: =15
-            Y: =216
-            ZIndex: =18
+            Y: =238
+            ZIndex: =21
 
         "x011Inp_CaHardness As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -322,8 +329,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =216
-            ZIndex: =19
+            Y: =238
+            ZIndex: =22
 
         "x011Inp_xCaHardness As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -335,12 +342,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_CaHardness.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_CaHardness.Value)
             Width: =73
-            X: =Parent.Width - Self.Width - 15
-            Y: =216
-            ZIndex: =20
+            X: =312
+            Y: =238
+            ZIndex: =23
 
         x011Lbl_MgHardness As Text:
             DisplayMode: =DisplayMode.Edit
@@ -349,8 +356,8 @@ Scr011_CWTInformation As screen:
             Text: ="Magnesium Hardness, ppm CaCO3"
             Width: =221
             X: =15
-            Y: =248
-            ZIndex: =21
+            Y: =270
+            ZIndex: =24
 
         "x011Inp_MgHardness As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -365,8 +372,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =248
-            ZIndex: =22
+            Y: =270
+            ZIndex: =25
 
         "x011Inp_xMgHardness As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -378,12 +385,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_MgHardness.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_MgHardness.Value)
             Width: =73
-            X: =Parent.Width - Self.Width - 15
-            Y: =248
-            ZIndex: =23
+            X: =312
+            Y: =270
+            ZIndex: =26
 
         x011Lbl_TotalHardness As Text:
             DisplayMode: =DisplayMode.Edit
@@ -392,8 +399,8 @@ Scr011_CWTInformation As screen:
             Text: ="Total Hardness, ppm CaCO3"
             Width: =221
             X: =15
-            Y: =280
-            ZIndex: =24
+            Y: =302
+            ZIndex: =27
 
         "x011Inp_TotalHardness As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -408,8 +415,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =280
-            ZIndex: =25
+            Y: =302
+            ZIndex: =28
 
         "x011Inp_xTotalHardness As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -421,12 +428,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_TotalHardness.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_TotalHardness.Value)
             Width: =73
-            X: =Parent.Width - Self.Width - 15
-            Y: =280
-            ZIndex: =26
+            X: =312
+            Y: =302
+            ZIndex: =29
 
         x011Lbl_Chloride As Text:
             DisplayMode: =DisplayMode.Edit
@@ -435,8 +442,8 @@ Scr011_CWTInformation As screen:
             Text: ="Chloride, ppm Cl"
             Width: =221
             X: =15
-            Y: =312
-            ZIndex: =27
+            Y: =334
+            ZIndex: =30
 
         "x011Inp_Chloride As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -451,8 +458,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =312
-            ZIndex: =28
+            Y: =334
+            ZIndex: =31
 
         "x011Inp_xChloride As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -464,12 +471,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_Chloride.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Chloride.Value)
             Width: =73
             X: =312
-            Y: =312
-            ZIndex: =29
+            Y: =334
+            ZIndex: =32
 
         x011Lbl_Sodium As Text:
             DisplayMode: =DisplayMode.Edit
@@ -478,8 +485,8 @@ Scr011_CWTInformation As screen:
             Text: ="Sodium, ppm Na"
             Width: =221
             X: =15
-            Y: =344
-            ZIndex: =30
+            Y: =366
+            ZIndex: =33
 
         "x011Inp_Sodium As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -494,8 +501,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =344
-            ZIndex: =31
+            Y: =366
+            ZIndex: =34
 
         "x011Inp_xSodium As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -507,12 +514,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_Sodium.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Sodium.Value)
             Width: =73
             X: =312
-            Y: =344
-            ZIndex: =32
+            Y: =366
+            ZIndex: =35
 
         x011Lbl_Iron As Text:
             DisplayMode: =DisplayMode.Edit
@@ -521,8 +528,8 @@ Scr011_CWTInformation As screen:
             Text: ="Iron, ppm Fe"
             Width: =221
             X: =15
-            Y: =376
-            ZIndex: =33
+            Y: =398
+            ZIndex: =36
 
         "x011Inp_Iron As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -537,8 +544,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =376
-            ZIndex: =34
+            Y: =398
+            ZIndex: =37
 
         "x011Inp_xIron As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -550,22 +557,22 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_Iron.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Iron.Value)
             Width: =73
             X: =312
-            Y: =376
-            ZIndex: =35
+            Y: =398
+            ZIndex: =38
 
         x011Lbl_Chlorine As Text:
             DisplayMode: =DisplayMode.Edit
             Height: =32
             Size: =12
-            Text: ="Chlorine, ppm Fe"
+            Text: ="Chlorine, ppm Cl2"
             Width: =221
             X: =15
-            Y: =408
-            ZIndex: =36
+            Y: =430
+            ZIndex: =39
 
         "x011Inp_Chlorine As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -580,8 +587,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =408
-            ZIndex: =37
+            Y: =430
+            ZIndex: =40
 
         "x011Inp_xChlorine As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -593,12 +600,12 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_Chlorine.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Chlorine.Value)
             Width: =73
             X: =312
-            Y: =408
-            ZIndex: =38
+            Y: =430
+            ZIndex: =41
 
         x011Lbl_Silica As Text:
             DisplayMode: =DisplayMode.Edit
@@ -607,8 +614,8 @@ Scr011_CWTInformation As screen:
             Text: ="Silica, ppm SiO2"
             Width: =221
             X: =15
-            Y: =440
-            ZIndex: =39
+            Y: =462
+            ZIndex: =42
 
         "x011Inp_Silica As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -623,8 +630,8 @@ Scr011_CWTInformation As screen:
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
             Width: =73
             X: =236
-            Y: =440
-            ZIndex: =40
+            Y: =462
+            ZIndex: =43
 
         "x011Inp_xSilica As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -636,25 +643,129 @@ Scr011_CWTInformation As screen:
             FontColor: =RGBA(0, 0, 0, 1)
             FontSize: =0
             Height: =32
-            Placeholder: =Value(oCycles) * Value(x011Inp_Silica.Value)
             TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Silica.Value)
             Width: =73
             X: =312
-            Y: =440
-            ZIndex: =41
+            Y: =462
+            ZIndex: =44
+
+        x011Lbl_Silica_1 As Text:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Size: =12
+            Text: ="Silica, ppm SiO2"
+            Width: =221
+            X: =15
+            Y: =494
+            ZIndex: =45
+
+        "x011Inp_Silica_1 As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =RGBA(0, 0, 0, 1)
+            FontSize: =0
+            Height: =32
+            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Width: =73
+            X: =236
+            Y: =494
+            ZIndex: =46
+
+        "x011Inp_xSilica_1 As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =RGBA(0, 0, 0, 1)
+            FontSize: =0
+            Height: =32
+            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Silica_1.Value)
+            Width: =73
+            X: =312
+            Y: =494
+            ZIndex: =47
+
+        x011Lbl_Silica_2 As Text:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Size: =12
+            Text: ="Silica, ppm SiO2"
+            Width: =221
+            X: =15
+            Y: =526
+            ZIndex: =48
+
+        "x011Inp_Silica_2 As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =RGBA(0, 0, 0, 1)
+            FontSize: =0
+            Height: =32
+            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Width: =73
+            X: =236
+            Y: =526
+            ZIndex: =49
+
+        "x011Inp_xSilica_2 As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =RGBA(0, 0, 0, 1)
+            FontSize: =0
+            Height: =32
+            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: =Value(oCycles) * Value(x011Inp_Silica_2.Value)
+            Width: =73
+            X: =312
+            Y: =526
+            ZIndex: =50
+
+        x011Ico_BalanaceAnalysis As icon.Tools:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.None
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =36
+            Icon: =Icon.Tools
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Rotation: =45
+            Width: =36
+            X: =7
+            Y: =38
+            ZIndex: =51
 
     x011Cnt_SaturationIndex As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Light
-        Height: =x011Cnt_WaterAnalysis.Height
+        Height: =x011Cnt_SystemData.Y - Self.Y - 15
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Width: =Parent.Width - Self.X - 15
         X: =x011Cnt_WaterAnalysis.X + x011Cnt_WaterAnalysis.Width + 15
-        Y: =x011Cnt_Header.Y + x011Cnt_Header.Height + 20
+        Y: =Container1.Y + Container1.Height + 15
         ZIndex: =4
 
         x011Lbl_SaturationIndex As Text:
@@ -670,60 +781,6 @@ Scr011_CWTInformation As screen:
             Y: =0 + 0
             ZIndex: =1
 
-        x011Lbl_Cycles As Text:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Size: =12
-            Text: ="Cycles"
-            Width: =92
-            X: =15
-            Y: =56
-            ZIndex: =2
-
-        "x011Inp_Cycles As 'Text input'":
-            Align: ='TextInputCanvas.Align'.End
-            BorderColor: =RGBA(106, 122, 127, 1)
-            BorderRadius: =0
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =1
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            OnChange: =Set(oCycles, Value(Self.Value))
-            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
-            Value: |-
-                =Text(oCycles, "##0.00")
-            Width: =73
-            X: =107
-            Y: =56
-            ZIndex: =3
-
-        x011Lbl_MaxTemp As Text:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Size: =12
-            Text: ="Max Temp, oC"
-            Width: =92
-            X: =15
-            Y: =88
-            ZIndex: =4
-
-        "x011Inp_MaxTemp As 'Text input'":
-            Align: ='TextInputCanvas.Align'.End
-            BorderColor: =RGBA(106, 122, 127, 1)
-            BorderRadius: =0
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =1
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            OnChange: =Set(oMaxTemp, Value(Self.Value))
-            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
-            Value: |-
-                =Text(oMaxTemp, "##0.00")
-            Width: =73
-            X: =107
-            Y: =88
-            ZIndex: =5
-
         x011Lbl_pHs As Text:
             DisplayMode: =DisplayMode.Edit
             Height: =32
@@ -731,7 +788,7 @@ Scr011_CWTInformation As screen:
             Text: ="pHs"
             Width: =92
             X: =15
-            Y: =128
+            Y: =44
             ZIndex: =6
 
         "x011Inp_pHs As 'Text input'":
@@ -744,18 +801,19 @@ Scr011_CWTInformation As screen:
             Height: =32
             Value: |-
                 =Text(
-                    (
+                    IfError(
                         (9.3) +
-                        ((Log(Value(x011Inp_TotalDissolvedSolids.Value) * Value(oCycles)) - 1) / 10) +
+                        ((Log(Value(x011Inp_xTotalDissolvedSolids.Value)) - 1) / 10) +
                         (-13.12 * Log(oMaxTemp + 273) + 34.55) -
-                        (Log(Value(x011Inp_CaHardness.Value) * Value(oCycles)) - 0.4) -
-                        (Log(Value(x011Inp_MAlkalinity.Value) * Value(oCycles)))
+                        (Log(Value(x011Inp_xCaHardness.Value)) - 0.4) -
+                        (Log(Value(x011Inp_xMAlkalinity.Value)))
+                        ,0
                     ),
                     "##0.00"
                 )
             Width: =73
             X: =107
-            Y: =128
+            Y: =44
             ZIndex: =7
 
         x011Lbl_pHeq As Text:
@@ -765,7 +823,7 @@ Scr011_CWTInformation As screen:
             Text: ="pHeq"
             Width: =92
             X: =15
-            Y: =160
+            Y: =76
             ZIndex: =8
 
         "x011Inp_pHeq As 'Text input'":
@@ -778,14 +836,15 @@ Scr011_CWTInformation As screen:
             Height: =32
             Value: |-
                 =Text(
-                    (
-                        1.465 * Log(Value(x011Inp_MAlkalinity.Value) * Value(oCycles)) + 4.54
+                    IfError(
+                        1.465 * Log(Value(x011Inp_xMAlkalinity.Value)) + 4.54
+                        ,0
                     ),
                     "##0.00"
                 )
             Width: =73
             X: =107
-            Y: =160
+            Y: =76
             ZIndex: =9
 
         x011Lbl_LangelierSaturationIndex As Text:
@@ -793,13 +852,15 @@ Scr011_CWTInformation As screen:
             Height: =32
             Size: =12
             Text: ="Langelier"
+            Weight: ='TextCanvas.Weight'.Semibold
             Width: =92
             X: =15
-            Y: =200
+            Y: =116
             ZIndex: =10
 
         "x011Inp_LangelierSaturationIndex As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
+            Appearance: ='TextInputCanvas.Appearance'.FilledDarker
             BorderColor: =RGBA(106, 122, 127, 1)
             BorderRadius: =0
             BorderStyle: =BorderStyle.Solid
@@ -813,18 +874,48 @@ Scr011_CWTInformation As screen:
                 )
             Width: =73
             X: =Parent.Width - Self.Width - 15
-            Y: =200
+            Y: =116
             ZIndex: =11
+
+        x011Lbl_LSIComment As Text:
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =50
+            Size: =12
+            Text: |-
+                =If(
+                    Value(x011Inp_LangelierSaturationIndex.Value) <= -0.5,
+                    "Serious Corrosion",
+                    If(
+                        Value(x011Inp_LangelierSaturationIndex.Value) < 0,
+                        "Slight Corrosion, Non Scale Forming",
+                        If(
+                            Value(x011Inp_LangelierSaturationIndex.Value) = 0,
+                            "Balanced, Possible Pitting Corrosion",
+                            If(
+                                Value(x011Inp_LangelierSaturationIndex.Value) <= 0.5,
+                                "Slightly Scale Forming and Corrosive",
+                                "Scale Forming but Non Corrosive"
+                            )
+                        )
+                    )
+                )
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Width: =165
+            X: =15
+            Y: =148
+            ZIndex: =12
 
         x011Lbl_RyznerStabilityIndex As Text:
             DisplayMode: =DisplayMode.Edit
             Height: =32
             Size: =12
             Text: ="Ryznar"
+            Weight: ='TextCanvas.Weight'.Semibold
             Width: =92
             X: =15
-            Y: =232
-            ZIndex: =12
+            Y: =198
+            ZIndex: =13
 
         "x011Inp_RyznerStabilityIndex As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -841,18 +932,52 @@ Scr011_CWTInformation As screen:
                 )
             Width: =73
             X: =Parent.Width - Self.Width - 15
-            Y: =232
-            ZIndex: =13
+            Y: =198
+            ZIndex: =14
+
+        x011Lbl_RSIComment As Text:
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =50
+            Size: =12
+            Text: |-
+                =If(
+                    Value(x011Inp_RyznerStabilityIndex.Value) <= 5,
+                    "Heavy Scale",
+                    If(
+                        Value(x011Inp_RyznerStabilityIndex.Value) <= 6,
+                        "Light Scale",
+                        If(
+                            Value(x011Inp_RyznerStabilityIndex.Value) <= 7,
+                            "Light Scale or Corrosion",
+                            If(
+                                Value(x011Inp_RyznerStabilityIndex.Value) <= 7.5,
+                                "Significant Corrosion",
+                                If(
+                                    Value(x011Inp_RyznerStabilityIndex.Value) <= 9,
+                                    "Heavy Corrosion",
+                                    "Intolerable Corrosion"
+                                )
+                            )
+                        )
+                    )
+                )
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Width: =165
+            X: =15
+            Y: =230
+            ZIndex: =15
 
         x011Lbl_PuckoriusScalingIndex As Text:
             DisplayMode: =DisplayMode.Edit
             Height: =32
             Size: =12
-            Text: ="PKI"
+            Text: ="Pockurius"
+            Weight: ='TextCanvas.Weight'.Semibold
             Width: =92
             X: =15
-            Y: =264
-            ZIndex: =14
+            Y: =280
+            ZIndex: =16
 
         "x011Inp_PuckoriusScalingIndex As 'Text input'":
             Align: ='TextInputCanvas.Align'.End
@@ -869,8 +994,99 @@ Scr011_CWTInformation As screen:
                 )
             Width: =73
             X: =Parent.Width - Self.Width - 15
-            Y: =264
-            ZIndex: =15
+            Y: =280
+            ZIndex: =17
+
+        x011Lbl_PKIComment As Text:
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =50
+            Size: =12
+            Text: |-
+                =If(
+                    Value(x011Inp_PuckoriusScalingIndex.Value) <= 5,
+                    "Heavy Scale",
+                    If(
+                        Value(x011Inp_PuckoriusScalingIndex.Value) <= 6,
+                        "Light Scale",
+                        If(
+                            Value(x011Inp_PuckoriusScalingIndex.Value) <= 7,
+                            "Light Scale or Corrosion",
+                            If(
+                                Value(x011Inp_PuckoriusScalingIndex.Value) <= 7.5,
+                                "Significant Corrosion",
+                                If(
+                                    Value(x011Inp_PuckoriusScalingIndex.Value) <= 9,
+                                    "Heavy Corrosion",
+                                    "Intolerable Corrosion"
+                                )
+                            )
+                        )
+                    )
+                )
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Width: =165
+            X: =15
+            Y: =312
+            ZIndex: =18
+
+        x011Lbl_LarsonSkoldIndex As Text:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Size: =12
+            Text: ="Larson-Skold"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =92
+            X: =15
+            Y: =362
+            ZIndex: =19
+
+        "x011Inp_LarsonSkoldIndex As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Value: =
+            Width: =73
+            X: =107
+            Y: =362
+            ZIndex: =20
+
+        x011Lbl_LSkIComment As Text:
+            DisplayMode: =DisplayMode.Edit
+            FontItalic: =true
+            Height: =50
+            Size: =12
+            Text: |-
+                =/*If(
+                    Value(x011Inp_PuckoriusScalingIndex_1.Value) <= 5,
+                    "Heavy Scale",
+                    If(
+                        Value(x011Inp_PuckoriusScalingIndex_1.Value) <= 6,
+                        "Light Scale",
+                        If(
+                            Value(x011Inp_PuckoriusScalingIndex_1.Value) <= 7,
+                            "Light Scale or Corrosion",
+                            If(
+                                Value(x011Inp_PuckoriusScalingIndex_1.Value) <= 7.5,
+                                "Significant Corrosion",
+                                If(
+                                    Value(x011Inp_PuckoriusScalingIndex_1.Value) <= 9,
+                                    "Heavy Corrosion",
+                                    "Intolerable Corrosion"
+                                )
+                            )
+                        )
+                    )
+                )*/
+            VerticalAlign: ='TextCanvas.VerticalAlign'.Top
+            Width: =165
+            X: =15
+            Y: =394
+            ZIndex: =21
 
     x011Cnt_SystemData As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
@@ -898,4 +1114,100 @@ Scr011_CWTInformation As screen:
             X: =0 + 0
             Y: =0 + 0
             ZIndex: =1
+
+        TextCanvas1 As Text:
+            DisplayMode: =DisplayMode.Edit
+            Height: =173
+            Text: |-
+                ="4,0 - 5,0	Heavy scale
+                5,0 - 6,0	Light scale
+                6,0 - 7,0	Little scale or corrosion
+                7,0 - 7,5	Corrosion significant
+                7,5 - 9,0	Heavy corrosion
+                >9,0	Corrosion intolerable"
+            Width: =528
+            X: =40
+            Y: =40
+            ZIndex: =2
+
+    Container1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Light
+        Height: =125
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =195
+        X: =430
+        Y: =140
+        ZIndex: =6
+
+        x011Lbl_SaturationIndex_1 As Text:
+            Align: ='TextCanvas.Align'.Center
+            DisplayMode: =DisplayMode.Edit
+            Height: =36
+            PaddingTop: =10
+            Size: =18
+            Text: ="Saturation Index"
+            Weight: ='TextCanvas.Weight'.Semibold
+            Width: =Parent.Width
+            X: =0 + 0
+            Y: =0 + 0
+            ZIndex: =1
+
+        x011Lbl_Cycles As Text:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Size: =12
+            Text: ="Cycles"
+            Width: =92
+            X: =15
+            Y: =44
+            ZIndex: =2
+
+        "x011Inp_Cycles As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            OnChange: =oCycles = Value(Self.Value)
+            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: |-
+                =Text(oCycles, "##0.00")
+            Width: =73
+            X: =107
+            Y: =44
+            ZIndex: =3
+
+        x011Lbl_MaxTemp As Text:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Size: =12
+            Text: ="Max Temp, oC"
+            Width: =92
+            X: =15
+            Y: =76
+            ZIndex: =4
+
+        "x011Inp_MaxTemp As 'Text input'":
+            Align: ='TextInputCanvas.Align'.End
+            BorderColor: =RGBA(106, 122, 127, 1)
+            BorderRadius: =0
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            OnChange: =oMaxTemp = Value(Self.Value)
+            TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+            Value: |-
+                =Text(oMaxTemp, "##0.00")
+            Width: =73
+            X: =107
+            Y: =76
+            ZIndex: =5
 

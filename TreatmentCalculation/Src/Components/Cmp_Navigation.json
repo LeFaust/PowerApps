@@ -621,7 +621,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(\r\n    Cmp_Navigation.zSubNavigation = ThisItem.ID,\r\n    DisplayMode.Disabled,\r\n    DisplayMode.Edit\r\n)",
+                "InvariantScript": "If(\n    Cmp_Navigation.zSubNavigation = ThisItem.ID,\n    DisplayMode.Disabled,\n    DisplayMode.Edit\n)",
                 "Property": "DisplayMode",
                 "RuleProviderType": "User"
               },
@@ -2055,7 +2055,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638600896024434198",
+    "LastModifiedTimestamp": "638601710160460754",
     "Name": "Cmp_Navigation",
     "Rules": [
       {
@@ -2161,7 +2161,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638600896024434198",
+  "LastModifiedTimestamp": "638601710160460754",
   "Name": "89b7dffe68ab42459bbfc5305bec16dc",
   "OverridableProperties": {},
   "Version": "1.0"

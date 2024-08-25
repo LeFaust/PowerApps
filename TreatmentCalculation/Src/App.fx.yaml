@@ -1,5 +1,9 @@
 App As appinfo:
     BackEnabled: =true
+    Formulas: |-
+        =// --- Setup Variables
+        oCycles = 2;
+        oMaxTemp = 25;
     OnStart: |
         =// --- Setup Main Navigation Menu
         ClearCollect(
@@ -81,13 +85,13 @@ App As appinfo:
             }, {
                 ButtonID : "N01",
                 ID: "Scr012",
-                Icon: Clipboard,
-                Screen : Scr012_CWTEvaluation
-            }, {
+                Icon: Calculator,
+                Screen : Scr012_CWTCalculation
+                }, {
                 ButtonID : "N01",
                 ID: "Scr013",
-                Icon: Calculator,
-                Screen : Scr013_CWTCalculation
+                Icon: Clipboard,
+                Screen : Scr013_CWTEvaluation
             }, {
                 ButtonID : "N01",
                 ID: "Scr014",
