@@ -554,229 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xIron.AccessibleLabel"
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xPAlkalinity.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xIron.AccessibleLabel",
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xPAlkalinity.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xIron"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSodium.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSodium.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSodium"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChloride.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChloride.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChloride"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xTotalHardness.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xTotalHardness.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xTotalHardness"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMgHardness.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMgHardness.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMgHardness"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xCaHardness.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xCaHardness.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xCaHardness"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMAlkalinity.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMAlkalinity.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMAlkalinity"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xConductivity.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xConductivity.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xConductivity"
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xPAlkalinity"
               }
             }
           ],
@@ -824,36 +614,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xPAlkalinity.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xPAlkalinity.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xPAlkalinity"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Chlorine.AccessibleLabel"
                 }
               ],
@@ -867,36 +627,6 @@
                 "member": "AccessibleLabel",
                 "module": "Scr011_CWTInformation",
                 "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Chlorine"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_2"
               }
             }
           ],
@@ -957,6 +687,396 @@
                 "member": "AccessibleLabel",
                 "module": "Scr011_CWTInformation",
                 "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_Silica_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xConductivity.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xConductivity.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xConductivity"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMAlkalinity.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMAlkalinity.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMAlkalinity"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xCaHardness.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xCaHardness.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xCaHardness"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMgHardness.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMgHardness.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xMgHardness"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xTotalHardness.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xTotalHardness.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xTotalHardness"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChloride.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChloride.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChloride"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSodium.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSodium.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSodium"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xIron.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xIron.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xIron"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChlorine.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChlorine.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChlorine"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr011_CWTInformation",
+                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_2"
               }
             }
           ],
@@ -1094,36 +1214,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr011_CWTInformation.Container1.x011Inp_Cycles.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.Container1.x011Inp_Cycles.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.Container1.x011Inp_Cycles"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_SaturationIndex.x011Inp_pHeq.AccessibleLabel"
                 }
               ],
@@ -1184,109 +1274,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChlorine.AccessibleLabel"
+                  "fullyQualifiedName": "Scr011_CWTInformation.Container1.x011Inp_Cycles.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChlorine.AccessibleLabel",
+                  "fullyQualifiedName": "Scr011_CWTInformation.Container1.x011Inp_Cycles.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xChlorine"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scr011_CWTInformation",
-                "type": "Scr011_CWTInformation.x011Cnt_WaterAnalysis.x011Inp_xSilica_2"
+                "type": "Scr011_CWTInformation.Container1.x011Inp_Cycles"
               }
             }
           ],
