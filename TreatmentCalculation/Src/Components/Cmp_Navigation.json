@@ -189,6 +189,14 @@
                 "InvariantPropertyName": "PaddingLeft",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "true",
+                "InvariantPropertyName": "Visible",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
               }
             ],
             "ControlUniqueId": "12",
@@ -380,6 +388,12 @@
                 "InvariantScript": "10",
                 "Property": "PaddingLeft",
                 "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "If(\r\n    ThisItem.Icon = SampleImage,\r\n    false,\r\n    true\r\n)",
+                "Property": "Visible",
+                "RuleProviderType": "User"
               }
             ],
             "StyleName": "defaultImageStyle",
@@ -533,6 +547,14 @@
                 "AutoRuleBindingEnabled": false,
                 "AutoRuleBindingString": "false",
                 "InvariantPropertyName": "OnSelect",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "true",
+                "InvariantPropertyName": "Visible",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
               }
@@ -762,6 +784,12 @@
                 "InvariantScript": "false",
                 "Property": "Strikethrough",
                 "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "If(\r\n    ThisItem.Icon = SampleImage,\r\n    false,\r\n    true\r\n)",
+                "Property": "Visible",
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Behavior",
@@ -1720,7 +1748,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Navigate(Cmp_Navigation.zHome)",
+                "InvariantScript": "Set(oSelectedButton, \"N00\");\r\nNavigate(Cmp_Navigation.zHome);",
                 "Property": "OnSelect",
                 "RuleProviderType": "User"
               }
@@ -2055,12 +2083,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638601918748803501",
+    "LastModifiedTimestamp": "638602008798011710",
     "Name": "Cmp_Navigation",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Scr00_MainScreen",
+        "InvariantScript": "Scr000_MainScreen",
         "Property": "zHome",
         "RuleProviderType": "System"
       },
@@ -2161,7 +2189,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638601918748803501",
+  "LastModifiedTimestamp": "638602008798011710",
   "Name": "89b7dffe68ab42459bbfc5305bec16dc",
   "OverridableProperties": {},
   "Version": "1.0"

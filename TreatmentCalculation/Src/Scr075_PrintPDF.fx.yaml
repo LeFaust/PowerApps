@@ -1,0 +1,22 @@
+"Scr075_PrintPDF As screen.'printableLayout_A4Portrait_ver1.0'":
+    Fill: =Color.White
+    Height: =1123
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    Width: =794
+
+    PrintButton1_6 As label:
+        Align: =Align.Center
+        Color: =App.Theme.Colors.Lighter10
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =32
+        OnSelect: =Print()
+        Size: =13
+        TabIndex: =0
+        Text: ="Print"
+        Visible: =Not(Parent.Printing)
+        Width: =96
+        X: =Parent.Width - Self.Width - 25
+        Y: =25
+        ZIndex: =2
+

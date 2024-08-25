@@ -22,7 +22,7 @@ Scr011_CWTInformation As screen:
         x011Cmp_Header As Cmp_Header:
             Height: =Parent.Height
             Width: =Parent.Width
-            zHeaderSubTitle: ="SystemData / Water Analysis"
+            zHeaderSubTitle: ="System Data / Water Analysis"
             zHeaderTitle: ="Cooling Water Treatment"
 
     x011Cnt_Navigation As groupContainer.manualLayoutContainer:
@@ -765,7 +765,7 @@ Scr011_CWTInformation As screen:
         RadiusTopRight: =10
         Width: =Parent.Width - Self.X - 15
         X: =x011Cnt_WaterAnalysis.X + x011Cnt_WaterAnalysis.Width + 15
-        Y: =Container1.Y + Container1.Height + 15
+        Y: =x011Cnt_WaterCycles.Y + x011Cnt_WaterCycles.Height + 15
         ZIndex: =4
 
         x011Lbl_SaturationIndex As Text:
@@ -1130,7 +1130,7 @@ Scr011_CWTInformation As screen:
             Y: =40
             ZIndex: =2
 
-    Container1 As groupContainer.manualLayoutContainer:
+    x011Cnt_WaterCycles As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(106, 122, 127, 1)
         BorderThickness: =2
         DropShadow: =DropShadow.Light
@@ -1144,13 +1144,13 @@ Scr011_CWTInformation As screen:
         Y: =140
         ZIndex: =6
 
-        x011Lbl_SaturationIndex_1 As Text:
+        x011Lbl_WaterCycle As Text:
             Align: ='TextCanvas.Align'.Center
             DisplayMode: =DisplayMode.Edit
             Height: =36
             PaddingTop: =10
             Size: =18
-            Text: ="Saturation Index"
+            Text: ="Water Cycles"
             Weight: ='TextCanvas.Weight'.Semibold
             Width: =Parent.Width
             X: =0 + 0

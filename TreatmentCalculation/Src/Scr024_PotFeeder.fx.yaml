@@ -39,3 +39,17 @@ Scr024_PotFeeder As screen:
             X: =0 + 0
             Y: =0 + 0
 
+    Container41_6 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Bold
+        Height: =x012Cnt_Navigation.Y - Self.Y - 20
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width - 2 * Self.X
+        X: =15 + 0
+        Y: =x012Cnt_Header.Y + x012Cnt_Header.Height + 20
+        ZIndex: =3
+

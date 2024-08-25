@@ -1,0 +1,55 @@
+Scr051_WaterFiltration As screen:
+    BackgroundImage: ='White Minimalist Poem Book Cover'
+    Fill: =Color.SkyBlue
+    ImagePosition: =ImagePosition.Fill
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =
+
+    x051_Cnt_Header As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Semibold
+        Height: =100
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width - 2 * Self.X
+        X: =20
+        Y: =20
+        ZIndex: =1
+
+        x051_Cmp_Header As Cmp_Header:
+            Height: =Parent.Height
+            Width: =Parent.Width
+            zHeaderSubTitle: ="System Data / Water Analysis"
+            zHeaderTitle: ="Water Filtration System"
+
+    x051_Cnt_Navigation As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Bold
+        Height: =100
+        Width: =App.DesignWidth
+        Y: =Parent.Height - Self.Height
+        ZIndex: =2
+
+        x051_Cmp_Navigation As Cmp_Navigation:
+            Height: =Parent.Height
+            X: =0 + 0
+            Y: =0 + 0
+
+    Container41_7 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(106, 122, 127, 1)
+        BorderThickness: =2
+        DropShadow: =DropShadow.Bold
+        Height: =x012Cnt_Navigation.Y - Self.Y - 20
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =Parent.Width - 2 * Self.X
+        X: =15 + 0
+        Y: =x012Cnt_Header.Y + x012Cnt_Header.Height + 20
+        ZIndex: =3
+

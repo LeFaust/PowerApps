@@ -4,7 +4,7 @@ Cmp_Navigation As CanvasComponent:
     Width: =App.DesignWidth
     X: =0
     Y: =0
-    zHome: =Scr00_MainScreen
+    zHome: =Scr000_MainScreen
     ZIndex: =1
     zMenuItems: |-
         =Filter(
@@ -56,7 +56,9 @@ Cmp_Navigation As CanvasComponent:
             HoverBorderColor: =App.Theme.Colors.Darker10
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 14, 46, 0.3)
-            OnSelect: =Navigate(Cmp_Navigation.zHome)
+            OnSelect: |-
+                =Set(oSelectedButton, "N00");
+                Navigate(Cmp_Navigation.zHome);
             PressedBorderColor: =App.Theme.Colors.Darker40
             PressedColor: =Self.Color
             PressedFill: =RGBA(0, 14, 46, 0.6)
@@ -100,6 +102,12 @@ Cmp_Navigation As CanvasComponent:
             RadiusBottomRight: =10
             RadiusTopLeft: =10
             RadiusTopRight: =10
+            Visible: |-
+                =If(
+                    ThisItem.Icon = SampleImage,
+                    false,
+                    true
+                )
             Width: =80
             X: =0 + 0
             Y: =0 + 0
@@ -131,6 +139,12 @@ Cmp_Navigation As CanvasComponent:
             PressedFill: =RGBA(0, 14, 46, 0.6)
             Size: =24
             Text: =
+            Visible: |-
+                =If(
+                    ThisItem.Icon = SampleImage,
+                    false,
+                    true
+                )
             Width: =80 + 0
             X: =0 + 0
             Y: =0 + 0
